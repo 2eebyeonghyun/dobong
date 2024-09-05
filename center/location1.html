@@ -1,0 +1,108 @@
+<? 
+$_dep = array(1,7,2);
+$_tit = array('센터소개','오시는 길','도봉구육아종합지원센터 창동점');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php"; 
+?>
+
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section center-page location-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/inc/tab1.php"; ?>
+
+                    <div class="__tit1">
+                        <h3>도봉구육아종합지원센터 창동점 위치</h3>
+                    </div>
+                    <ul class="__dotlist __txt15">
+                        <li>서울시 도봉구 우이천로 4길 24-5</li>
+                        <li>전화번호 ☎ 02-994-3341</li>
+                    </ul>
+
+                    <div class="__map __mt20">
+                        <div id="daumRoughmapContainer1715237686422" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    </div>
+
+                    <div class="__tit1 __mt50">
+                        <h3>교통편 안내</h3>
+                    </div>
+                    <div class="__loc">
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc1.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">수유역 1번출구</p>
+                                            <p>1133번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">창동역 2번출구</p>
+                                            <p>노원14번</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="information_txt">* 버스하차지점: 방학동 신동아APT (마을버스07번: 도봉여성세터하차)</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc3.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">방학사거리에서 수유방면으로</p>
+                                            <p>직진 후 우이교 교차로에서 좌회전하여 신창교에서 좌회전</p>
+                                        </li>
+
+                                        <li>
+                                            <p class="__blue fwn">도봉문화정보센터 삼거리에서 번동사거리 방향</p>
+                                            <p>2.5km 직진 후 좌회전 - 강북구보건소 사거리 방향 1.2km직진 후 좌회전 - 신창교 건너 신창초등학교 지나 북서울농협창동지점 앞에서 우회전</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc4.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>우이천 초안교 혹은 신창교 건너 신화초등학교와 신창동교회 방면</li>
+                                        <li>신창시장에서 신창초등학교 방면으로 도보 후, 북서울농협창동지점과 신창동교회 사이 골목</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1715237686422",
+		"key" : "2jad3",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+
+
+</body>
+</html>

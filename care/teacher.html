@@ -1,0 +1,422 @@
+<?
+$_dep = array(2,2,1);
+$_tit = array('보육지원','대체인력지원사업','대체인력지원사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><img src="../images/icon/teacher.gif">대체인력지원사업</h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/care/teacher.html" class="active"><span>대체교사 지원사업</span></a>
+					<a href="<?=DIR?>/care/teacher2.html"><span>인건비 지원사업</span></a>
+					<a href="<?=DIR?>/care/teacher3.html"><span>대체조리원 지원사업</span></a>
+				</div>
+
+
+<div class="__greenHead">
+					<dl>
+						<dt>동대문구육아종합지원센터는</dt>
+						<dd>
+							어린이집 교사가 연차, 보수교육, 병가, 경조사휴가 등의 업무공백이 생길 시 그 공백을 최소화하기 위하여 어린이집에 대체교사를 지원합니다.
+
+						</dd>
+					</dl>
+				</div>
+				
+
+				<div class="__tit1 __mt50">
+					<h3>지원대상 및 우선순위</h3>
+				</div>
+
+				<table class="__tbl type2">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">우선순위</th>
+							<th scope="col">지원사유</th>
+							<th scope="col" colspan="2">지원 일수</th>
+							<th scope="col">비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						
+						<tr>
+							<td rowspan="6">
+								상시
+							</td>
+							<td>
+								1
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>보수교육(직무교육 우선 지원)</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								5일(최대 10일)
+							</td>
+							<td rowspan="6">
+								사전 신청
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								2
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>본인 결혼 (우선지원)</li>
+								</ul>
+							</td>
+							<td>
+								1~5일
+							</td>
+							<td rowspan="2">
+								최대 10일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>연가</li>
+								</ul>
+							</td>
+							<td>
+								1~10일
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="2">
+								3
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>예비군 훈련</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								훈련 기간
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>건강검진</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								1일
+							</td>
+						</tr>
+						<tr>
+							<td>
+								4
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>어린이집 사후방문(컨설팅)지원</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								회당 1일
+							</td>
+						</tr>
+						
+						<tr>
+							<td rowspan="10">
+								긴급
+							</td>
+							<td rowspan="2">
+								최우선
+							</td>
+							<td class="tal">
+								 <ul class="__dotlist">
+									<li>
+													아동학대 후속조치를 위한 긴급보육 지원 등<br>
+													(아동학대로 인한 격리조치 등)
+									</li>
+								 </ul>
+							</td>
+							<td colspan="2">
+								기간 제한없음
+							</td>
+							<td rowspan="10">
+								수시 신청
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								 <ul class="__dotlist">
+									<li>
+													보육교사 권익보호를 위한 긴급 지원 등
+									</li>
+								 </ul>
+							</td>
+							<td colspan="2">
+								기간 제한없음
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="4">
+								가족상
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>배우자, 본인 및 배우자의 부모</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								5일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>본인 및 배우자의 조부모ㆍ외조부모</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								3일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>자녀와 그 자녀의 배우자</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								3일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>본인 및 배우자의 형제자매</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								1일
+							</td>
+						</tr>
+						<tr>
+							<td>
+								본인<br>
+								질병 등<br>
+								사고
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>감염성 질환, 긴급 수술, 교통사고 등</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								1~10일<br>
+								최대 10일
+							</td>
+						</tr>
+						<tr>
+							<td rowspan="3">
+								모성 보호
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>인공수정 또는 체외수정 등 난임치료</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								1일<br>
+								최대 3일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>
+										유산(∼11주미만(5일) / 12∼15주(10일))
+									</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								5일<br>
+								최대 10일
+							</td>
+						</tr>
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>
+										임산부ㆍ영유아ㆍ미숙아등의 건강관리 등<br>
+										(산전관리, 건강검진, 예방접종 등)
+									</li>
+								</ul>
+							</td>
+							<td colspan="2">
+								1일<br>
+								최대 3일
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<ul class="__dotlist __txt14 __mt5">
+					<li>감염병 질환 의심으로 결핵균 배양검사가 필요한 경우 예외적으로 10일을 초과하더라도 그 기간(3주~8주)동안 대체교사 지원</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>지원대상</h3>
+				</div>
+
+				<table class="__tbl type2">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">서울시 대체교사(서울시보육포털서비스) </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">지원대상</th>
+							<td class="tal">
+								어린이집 및 시간제보육 제공기관에서 평일 8시간을 원칙으로 근무하는 담임교사(보육교사, 특수교사), 
+								교사겸직원장, 연장보육 전담교사, 야간연장 보육교사 <br>
+								※ 아동학대 후속조치로 인한 면직자 지원가능 
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제외대상</th>
+							<td class="tal">
+								대체교사, 보조교사, 보육교사를 겸직하고 있는 대표자
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">지원기준</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>서울시 보육서비스지원센터 국공립보육교직원 교육 시 우선지원  (재교육은 지원불가)</li>
+									<li>단, 교육 지원 신청이 없을 시 국비지원 기준 동일 적용</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<ul class="__dotlist dang __txt14 __mt15">
+					<li>출산 휴가는 대체교사 지원 대상에서 제외(파견 및 인건비 지원 불가)</li>
+				</ul>
+				
+				<ul class="__dotlist __txt14 __mt5">
+					<li>우선지원대상사업장(총 근로자 100인 이하 시설)의 출산 휴가자에 대하여는 고용보험기금에서 90일간 출산전후 휴가급여가 지급되므로 출산휴가에 따른 대체교사 인건비는 어린이집에서 부담</li>
+					<li>다만, 우선지원대상 사업장이 아닌 경우(총 근로자 100인 초과 시설)에는 최초 60일의 범위 내에서 대체교사 지원 가능</li>
+				</ul>
+
+				<ul class="__dotlist dang __txt14 __mt5">
+					<li>위의 경우에도 90일 중 마지막 30일은 고용보험기금에서 인건비가 지급되므로 대체교사 지원 불가 </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>보수교육, 결혼, 연가, 경조사, 긴급신청 : <span class="__blue">보육통합정보시스템 </span></h3>
+				</div>
+
+				<div class="tac __mt50">
+					<a href="https://cpms.childcare.go.kr/" target="_blank"><img src="<?=DIR?>/images/teacher1.gif" alt=""></a>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>국공립어린이집 보육교직원 교육(인력풀 교육) : <span class="__blue">서울시보육포털서비스</span></h3>
+				</div>
+
+				<div class="tac __mt50">
+					<a href="https://iseoul.seoul.go.kr/" target="_blank"><img src="<?=DIR?>/images/teacher2.gif" alt=""></a>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>유휴인력 지원</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>지원내용 : 신청이 저조한 시기에 대체교사 유휴인력을 우선순위에 따라 파견</li>
+					<li>신청방법 : 전날 유선접수 (※ 단, 추가지원 당일 긴급사유 요청이 있을 시, 긴급사유 우선지원)</li>
+				</ul>
+
+				<table class="__tbl type2 __mt10">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">순위</th>
+							<th scope="col">지원기준</th>
+							<th scope="col">지원일수</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>장애영유아가 있는 반의 담임교사</li>
+								</ul>
+							</td>
+							<td rowspan="6">최대5일</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>다문화 영유아가 있는 반의 담임교사</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>
+										부적응행동(문제행동) 영유아가 있는 반의 담임교사<br>
+										※ 육아종합지원센터 상담지원 요청이력 必
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">4</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>평가인증 준비기간에 있는 어린이집의 담임교사</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">5</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>견학 진행 어린이집의 담임교사</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">기타</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>어린이집 보조 인력이 필요하다고 판단되는 경우</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

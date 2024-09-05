@@ -1,0 +1,204 @@
+<?
+$_dep = array(3,7,1);
+$_tit = array('양육지원','상차림대여사업','제기점 이용안내');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+
+<body>
+	<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+		<?include_once PATH.'/inc/head.php';?>
+		<?include_once PATH.'/inc/snb.php';?>
+		<div id="sub">
+			<div class="inner">
+				<div id="tit_tab">
+					<h2><img src="../images/icon/table.gif">상차림대여사업</h2>
+				</div>
+				<div id="content">
+
+					<div class="__tab31">
+						<a href="<?=DIR?>/raise/table01.html"><span>답십리점 이용안내</span></a>
+						<a href="<?=DIR?>/raise/table02.html" class="active"><span>제기점 이용안내</span></a>
+						<a href="<?=DIR?>/raise/table03.html"><span>휘경점 이용안내</span></a>
+					</div>
+
+					<div class="__greenHead">
+						<dl>
+							<dt>돌· 백일 상차림</dt>
+							<dd>
+								부모에게 있어 아이보다 소중하고 값진 보물은 없습니다.
+								우리 아이의 가장 빛나는 순간을 함께 하겠습니다. 이용안내를 확인 후 예약해 주세요.
+							</dd>
+						</dl>
+					</div>
+
+
+					<div class="__tit1 __mt50">
+						<h3>대여 대상 및 안내 </h3>
+					</div>
+					<ul class="__dotlist __txt15">
+						<li>대여 대상 : <span class="__orange"> 제기점 대여카드 발급회원</span></li>
+                        <li><span class="__orange">대여회원 기간 내에만</span> 대여 가능하며, 회원 <span class="__orange">본인 자녀의 첫 생일(돌) 도래 후 3개월까지만</span> 대여 가능합니다.</li>
+						<li>상차림 대여 시, <span class="__orange">장난감 1개 대여로 처리</span>됩니다.</li>
+						<li>한 가족 당 <span class="__orange">한 달에 한 번만</span> 예약 및 대여 가능합니다.</li>
+					</ul>
+
+					<div class="__tit1 __mt50">
+						<h3>대여 가능 요일 및 시간</h3>
+					</div>
+					<ul class="__dotlist __txt15 __mt5">
+						<li>매주 수요일 10:00~17:00</li>
+					</ul>
+
+					<div class="__tit1 __mt50">
+						<h3>대여 방법 및 장소</h3>
+					</div>
+					<ul class="__dotlist __txt15 __mt5">
+						<li>예약 가능 요일 : 매주 수요일</li>
+						<li>예약시스템 이용시간 : 10:00~17:00</li>
+						<li>대여ㆍ반납 가능 요일 : 예약한 수요일 ~ 다음 주 화요일</li>
+						<li>대여 기간 : 대여한 날 ~ 다음주 화요일까지</li>
+						<li>대여 장소 : 2층 공동육아방</li>
+						<li>상차림 물품 확인으로 대여, 반납 시 <span class="__orange">약 30분의 소요 시간을 고려하여 방문</span>하셔야 합니다.</li>
+						<li><span class="__orange">온라인 신청 후 담당자가 사전 안내 전화 드립니다.</span></li>
+					</ul>
+
+					<div class="__tit1 __mt50">
+						<h3>대여 물품</h3>
+					</div>
+					<!-- 기존 통이미지-->
+					<!-- <div class="tac __mt50"><img src="<?=DIR?>/images/table-head2_01.jpg" alt=""></div>-->
+					<div class="tac __mt50 table_form">
+						<ul class="table_list_wrap type2">
+							<li class="table_list_box">
+								<ul>
+									<!--여기 올라갈 이미지는 272x360 으로 편집해서 올려야함-->
+									<li><img src="<?=DIR?>/images/table_new_01.png" alt=""></li>
+									<li>전통 상차림</li>
+
+								</ul>
+							</li>
+							<!--  <li class="table_list_box">
+                               <ul>
+                                <li><img src="<?=DIR?>/images/table_new_02.png" alt=""></li>
+                                <li>전통 상차림</li>        
+                               
+                               </ul>
+                            </li>-->
+							<li class="table_list_box">
+								<ul>
+									<li><img src="<?=DIR?>/images/table_new_03.png" alt=""></li>
+									<li>우드플라워 상차림</li>
+
+								</ul>
+							</li>
+							<li class="table_list_box">
+								<ul>
+									<li><img src="<?=DIR?>/images/table_new_04.png" alt=""></li>
+									<li>우드그린 상차림</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+
+					<div class="__tit1 __mt50">
+						<h3>대여 물품 세부 현황</h3>
+					</div>
+					<table class="__tbl type2 __mt10">
+						<colgroup class="__p">
+							<col style="width:300px;">
+							<col>
+						</colgroup>
+						<colgroup class="__m">
+							<col style="width:80px;">
+							<col>
+						</colgroup>
+
+						<tbody>
+							<tr>
+								<th scope="row">전통 상차림</th>
+								<td class="tal">현수막+지관통, 테이블보(흰색 2장, 먹보라)+보자기, 포인트러너, 범보커버(흰색), 액자(4*6, 5*7) 2개, 선물상자(소,대), 상화 (10개), 양초+조화+화병, 유기 (3종), 화병 (2개), 조화 (2개), 실타래, 원형쟁반 (2개), 사각쟁반, 돌잡이 11종, 접이식 상(소형)<br><br>
+									<font color="red">총 무게 13.3kg</font> / 대형 아크릴상자 상자크기 : 400*480*600(mm)
+
+								</td>
+							</tr>
+							<!-- <tr>
+                                <th scope="row">러블리 파티 상차림 </th>
+                                <td class="tal">현수막+지관통, 테이블보(흰색 1장, 브론즈 2장), 범보커버(흰색), 메인 클레이케이크, 미니케이크(분리형), 베이비 미니케이크 (4개), 원뿔클레이 장식(대, 소), 은색 케이크트레이 (대 1개, 중 2개), 조화+화병 (2세트), 원형접시 (2개), 액자(4*6) 2개, 고깔모자, 천장장식, 센터피스<br><br>
+                                    <font color="red">총 무게 11.2kg</font> / 대형 아크릴상자 상자크기 : 460*500*700(mm)
+
+
+                                </td>
+                            </tr>-->
+							<tr>
+								<th scope="row">우드플라워 상차림 </th>
+								<td class="tal">상하족자(1개), 상족자(1개), 테이블보(1개), 소반(1개), 허니콤트레이(1개), 모루굽접시(2개), 마일드접시(1개), 조화+화병(4세트), 메탈콜드촛대(2개), LED촛불(2개), 소품선반3P세트(1개), 원목액자(1개)<br><br>
+									<font color="red">총 무게 13kg</font> / 대형 투명리빙박스 상자크기 : 580*420*390(mm) 1개
+
+
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">우드그린 상차림 </th>
+								<td class="tal">상하족자(1개), 상족자(1개), 테이블보(1개), 린넨보자기(1개), 개다리소반(1개), 접이식소반(1개), 우드트레이(6개), 마일드접시(1개), 실타래장식세트(1개), 조화+화병(4세트), 전통나비촛대(1개), 초홀더세트(1개), 금속장식(1개), 우드달력(1개), 오색경단모형(1개)<br><br>
+									<font color="red">총 무게 15kg</font> / 대형 투명리빙박스 상자크기 : 580*420*310(mm) 2개
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="__caution __mt30">
+						<h3>대여 시 주의사항</h3>
+						<ul class="__dotlist __txt15 __mt15">
+							<li>본 대여품은 가정에서 영유아 양육 시 경제적 부담을 줄일 수 있도록 기획 구성된 제품입니다.</li>
+							<li>음식, 사진 등은 개별적으로 준비 후 사용해 주세요.</li>
+							<li>반납 시에는 대여 시와 동일하게 세척 및 정리 후 반납해 주세요.</li>
+							<li>식탁보에 이물질이 묻었을 경우, 이물질 제거 후 반납해 주세요.</li>
+							<li>반납 전 구성물의 개수와 상태 확인 부탁드립니다.</li>
+							<li>대여품 내 구성물 미반납 또는 파손 시에는 해당 구성품에 대한 변상 처리가 진행될 수 있으니, 대여 시 유의 해 주시기 바랍니다.</li>
+							<li><span class="__orange">상차림대여시 무게와 부피를 확인하시어 차량으로 이동해주시기 바랍니다.</span></li>
+						</ul>
+					</div>
+
+
+					<script>
+						function move() {
+							f = document.rentForm;
+							if (!f.agree1.checked) {
+								alert("상차림 대여 시 안내사항 및 관련 규정을 준수에 동의해주세요.");
+								f.agree1.focus();
+								return;
+							}
+							f.submit();
+						}
+
+					</script>
+					<form name='rentForm' action="table02_schedule.php">
+						<div class="__apprAgree __mt10">
+							<label><input type="checkbox" name="agree1" />
+								위의 동대문구육아종합지원센터의 상차림 대여 안내사항에 따라 관련 규정을 준수하고 내용에 동의합니다.</label>
+						</div>
+					</form>
+
+					<?// if($_SERVER['REMOTE_ADDR']=="1.209.234.24" || $_SERVER['REMOTE_ADDR']=="220.117.42.18"){ 
+	 if(true){ 
+?>
+					<div class="__mt30 tac">
+						<a href="javascript:move();" class="__btn4" title="새창 열림">제기점 예약 신청하기</a>
+					</div>
+					<? } else{ ?>
+					<div class="__mt30 tac">
+						<a href="javascript:alert('이용 준비중입니다.');" class="__btn4" title="새창 열림">제기점 예약 신청하기</a>
+					</div>
+					<? } ?>
+
+
+				</div>
+			</div>
+		</div>
+		<?include_once PATH.'/inc/foot.php';?>
+	</div>
+</body>
+
+</html>

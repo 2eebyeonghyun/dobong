@@ -1,0 +1,105 @@
+<?
+$_dep = array(3,6);
+$_tit = array('양육지원','육아지원코디네이터');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><img src="../images/icon/village.gif"><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<div class="__headSlogan type2">
+					<h3>
+						<strong>동대문구 육아지원코디네이터</strong>는?
+					</h3>
+				</div>
+
+				<div class="__vilHead">
+					<div class="box">
+						<div class="in" style="background:#fce9e9;">
+							다양한 <span style="color:#ab4040;">육아정보</span>를<br class="__p">
+							나눠드립니다. 
+						</div>
+					</div>
+					<div class="box">
+						<div class="in" style="background:#f3f3f7;">
+							<span style="color:#303096;">육아고충</span>을<br class="__p">
+							상담해드립니다.
+						</div>
+					</div>
+					<div class="box">
+						<div class="in" style="background:#fdf3e6;">
+							부모님들의 <span style="color:#b06f1a;">모임</span>을<br class="__p">
+							지원해드립니다.
+						</div>
+					</div>
+					<div class="box">
+						<div class="in" style="background:#fce9e9;">
+							부모님의<br class="__p">
+							<span style="color:#ab4040;">양육 파트너</span>입니다.
+						</div>
+					</div>
+				</div>
+
+				<div class="__vilMid __mt30">
+					<strong>동대문구 육아지원코디네이터</strong>와 상담하세요!
+				</div>
+
+
+				<div class="__vilimg __mt40">
+					<img src="<?=DIR?>/images/vill1-1_230321.png" alt="">
+				</div>
+
+				<table class="__tbl type2 __mt50">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:20%;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">업무</th>
+							<td class="tal">
+								<ul class="__dotlist">
+                                    <li>동대문구 육아자원 조사, 육아관련 정보제공 및 상담, 출산·전입에 필요한 육아정보 제공, 자조모임 지원, 기관안내 및 연계</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">상담시간</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>평일 9:00 ~ 18:00</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">상담방법</th>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>120 또는 담당 연락처를 통한 상담</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__mt50 tac">
+					<a href="https://icare.seoul.go.kr/icare/user/bbs/BD_selectBbsList.do?q_bbsCode=1013" target="_blank" class="__btn4">육아지원코디네이터 더 알아보기</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<?
+$_dep = array(2,2,3);
+$_tit = array('보육지원','대체인력지원사업','대체조리원 지원사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><img src="../images/icon/teacher.gif">대체인력지원사업</h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/care/teacher.html"><span>대체교사 지원사업</span></a>
+					<a href="<?=DIR?>/care/teacher2.html"><span>인건비 지원사업</span></a>
+					<a href="<?=DIR?>/care/teacher3.html" class="active"><span>대체조리원 지원사업</span></a>
+				</div>
+
+				<div class="__greenHead">
+					<dl>
+						<dt>동대문구육아종합지원센터는</dt>
+						<dd>
+							어린이집 조리원의 업무 공백 시 센터에서 채용한 대체조리원을 어린이집에 지원하여 조리원의 근무환경을 개선합니다.
+
+
+						</dd>
+					</dl>
+				</div>
+				
+
+				<div class="__tit1 __mt50">
+					<h3>우선순위</h3>
+				</div>
+
+				<table class="__tbl type2">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">우선순위</th>
+							<th scope="col" colspan="3">지원내용</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>아동학대 후속조치를 위한 긴급보육 지원</li>
+									<li>(아동학대로 인한 격리조치 등)</li>
+								</ul>
+							</td>
+							<td rowspan="8">1일~3일</td>
+						</tr>
+
+						<tr>
+							<td>2</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>본인 및 배우자의 직계존(비)속 사망</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td>3</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>감염성 질환, 긴급 수술, 교통사고 등</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="3">4</td>
+							<td rowspan="3">모성보호</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>인공수정 또는 체외수정 등 난임치료</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>유산</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>임산부 건강관리 등</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td>5</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>보수교육</li>
+									<li>(직무교육 우선 지원)</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td>6</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>연가 (연차 유급휴가)</li>
+									<li>(본인 결혼 우선 지원)</li>
+								</ul>
+							</td>
+						</tr>
+
+						<tr>
+							<td rowspan="2">7</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>예비군 훈련</li>
+								</ul>
+							</td>
+							<td>훈련기간</td>
+						</tr>
+
+						<tr>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>건강검진</li>
+								</ul>
+							</td>
+							<td>1일</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__tit1 __mt50">
+					<h3>신청방법</h3>
+				</div>
+				<div class="tac __mt50">
+					<a href="https://iseoul.seoul.go.kr/" target="_blank"><img src="<?=DIR?>/images/teacher3-1.gif" alt=""></a>
+				</div>
+
+
+				<div class="__tit1 __mt50">
+					<h3>지원방법</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>(신청) 원장이 서울시보육포털시스템을 통해 대체조리원 신청(1개월 단위로 전월에 사전신청)</li>
+					<li>(확정) 육아종합지원센터는 신청 어린이집 중 우선순위에 의해 어린이집 확정 및 대체조리원 배치</li>
+					<li>(지원) 어린이집에 통보 및 대체조리원 파견</li>
+					<li>(온라인 평가) 어린이집이 서울시보육포털시스템을 통해 작성</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

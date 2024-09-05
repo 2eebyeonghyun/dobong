@@ -1,0 +1,126 @@
+<?
+$_dep = array(5,6);
+$_tit = array('커뮤니티','구인');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+
+				<div class="__provisionHead __mb30">
+					<h3>어린이집에서 <strong>채용공고</strong>를 등재할 경우, </h3>
+					<div class="__txt15 __mt10">
+						기관 전화번호 외의 핸드폰번호는 <span class="__orange">개인정보보호법</span>에 따라 기록할수 없습니다.<br>
+						동대문구육아종합지원센터 기준에 적합한 경우만 구인 등록이 가능하오니 안내사항을 반드시 확인하시기 바랍니다.
+					</div>
+				</div>
+
+
+				<div class="__tab2">
+					<a href="./job.html" class="active"><span>어린이집 구인</span></a>
+					<a href="./job2.html"><span>기관 구인</span></a>
+				</div>
+
+
+				<div class="__topArea">
+					<div class="lef">
+						<div class="selbox">
+							<select name="" id="">
+								<option value="">희망직종</option>
+							</select>
+							<select name="" id="">
+								<option value="">희망유형</option>
+							</select>
+						</div>
+					</div>
+					<div class="rig">
+						<div class="__search">
+							<select name="" id="">
+								<option value="">제목</option>
+							</select>
+							<input type="text" />
+							<button type="submit"><i class="axi axi-search"></i></button>
+						</div>
+					</div>
+				</div>
+
+				<table class="__tblList respond2">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:85px;"/>
+						<col />
+						<col style="width:150px;"/>
+						<col style="width:100px;"/>
+						<col style="width:120px;"/>
+						<col style="width:150px;"/>
+						<col style="width:100px;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">시설명</th>
+							<th scope="col">시설유형</th>
+							<th scope="col">모집직종</th>
+							<th scope="col">등록일</th>
+							<th scope="col">채용여부</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="__p">1829</td>
+							<td class="subject"><a href="./job_view.html">유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제</a></td>
+							<td>예든어린이집</td>
+							<td>가정</td>
+							<td>보육교사</td>
+							<td>2020-10-14</td>
+							<td><span class="__ico1 green">채용중</span></td>
+						</tr>
+						<tr>
+							<td class="__p">1829</td>
+							<td class="subject"><a href="./job_view.html">유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제</a></td>
+							<td>예든어린이집</td>
+							<td>가정</td>
+							<td>보육교사</td>
+							<td>2020-10-14</td>
+							<td><span class="__ico1 white">채용완료</span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="rig">
+						<a href="./job_write.html" class="__btn1">등록하기</a>
+					</div>
+					<div class="cen">
+						<div class="__paging">
+							<a href="#" class="arr first"><span class="hide">첫 페이지</span><i class="axi axi-angle-double-left" aria-hidden="true"></i></a>
+							<a href="#" class="arr prev"><span class="hide">이전 페이지</span><i class="axi axi-angle-left" aria-hidden="true"></i></a>
+							<strong class="num active">1</strong>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+							<a href="#" class="arr next"><span class="hide">다음 페이지</span><i class="axi axi-angle-right" aria-hidden="true"></i></a>
+							<a href="#" class="arr last"><span class="hide">마지막 페이지</span><i class="axi axi-angle-double-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

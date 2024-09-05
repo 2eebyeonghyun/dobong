@@ -1,0 +1,82 @@
+<?
+$_dep = array(7,2,2);
+$_tit = array('마이페이지','대여리스트','도서 대여');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+
+				<table class="__tblList respond3">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:85px;">
+						<col>
+						<col style="width:150px;">
+						<col style="width:150px;">
+						<col style="width:150px;">
+						<col style="width:150px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="__p">번호</th>
+							<th scope="col">도서명</th>
+							<th scope="col">대여일</th>
+							<th scope="col">반납예정일</th>
+							<th scope="col">반납일</th>
+							<th scope="col">상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="번호" class="__p">1829</td>
+							<td data-th="도서명" class="subject"><a href="#">(내 친구 헝겊책) 어슬렁 거북 : 바닷속 친구들</a></td>
+							<td data-th="대여일">2020-10-14</td>
+							<td data-th="반납예정일">2020-10-14</td>
+							<td data-th="반납일">2020-10-14</td>
+							<td data-th="상태"><span class="__ico1 green">대여중</span></td>
+						</tr>
+						<tr>
+							<td data-th="번호" class="__p">1829</td>
+							<td data-th="도서명" class="subject"><a href="#">(내 친구 헝겊책) 어슬렁 거북 : 바닷속 친구들</a></td>
+							<td data-th="대여일">2020-10-14</td>
+							<td data-th="반납예정일">2020-10-14</td>
+							<td data-th="반납일">2020-10-14</td>
+							<td data-th="상태"><span class="__ico1 white">반납완료</span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="cen">
+						<div class="__paging">
+							<a href="#" class="arr first"><span class="hide">첫 페이지</span><i class="axi axi-angle-double-left" aria-hidden="true"></i></a>
+							<a href="#" class="arr prev"><span class="hide">이전 페이지</span><i class="axi axi-angle-left" aria-hidden="true"></i></a>
+							<strong class="num active">1</strong>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+							<a href="#" class="arr next"><span class="hide">다음 페이지</span><i class="axi axi-angle-right" aria-hidden="true"></i></a>
+							<a href="#" class="arr last"><span class="hide">마지막 페이지</span><i class="axi axi-angle-double-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

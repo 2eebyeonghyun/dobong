@@ -1,0 +1,59 @@
+<?
+$_dep = array(6,3);
+$_tit = array('회원관련','아이디/비밀번호 찾기');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<div class="__find">
+					<div class="tab">
+						<a href="./find_id.html">아이디 찾기</a>
+						<a href="./find_pass.html" class="active">비밀번호 찾기</a>
+					</div>
+					<div class="tit">
+						<dl>
+							<dt>
+								회원가입시 등록한 아이디 정보를 입력하시고<br class="__p">
+								본인인증을 진행해주세요.
+							</dt>
+							<dd>
+								본인인증이 완료되면 새로운 비밀번호로 등록 가능합니다.
+							</dd>
+						</dl>
+					</div>
+
+					<div class="form">
+						<dl>
+							<dt>아이디</dt>
+							<dd>
+								<input type="text" class="__inp">
+							</dd>
+						</dl>
+					</div>
+
+					<div class="btn">
+						<button type="button" class="__btnPhone" onclick="location.href='./find_id2.html'">
+							<img src="../images/ico-phone.gif" alt="">
+							<span>휴대폰 인증</span>
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

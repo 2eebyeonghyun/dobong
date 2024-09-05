@@ -1,0 +1,206 @@
+<?
+$_dep = array(2,1,4);
+$_tit = array('보육지원','평가제','컨설팅 사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2>평가제</h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/care/appraisal.html"><span>평가제 안내</span></a>
+					<a href="<?=DIR?>/care/appraisal2.html"><span>평가제 운영체계</span></a>
+					<a href="<?=DIR?>/care/appraisal3.html"><span>관련자료실</span></a>
+					<a href="<?=DIR?>/care/appraisal4.html" class="active"><span>컨설팅 사업</span></a>
+				</div>
+				<div class="__topArea">
+					<div class="lef">
+						<div class="__scheHead">
+							<strong>2020년 8월</strong>
+							<a href="#" class="prev"><i class="axi axi-angle-left"></i></a>
+							<a href="#" class="next"><i class="axi axi-angle-right"></i></a>
+						</div>
+					</div>
+					<div class="rig">
+						<div class="__txt14">※ 해당 날짜를 클릭하시면 현장 방문 컨설팅을 신청하실 수 있습니다.</div>
+					</div>
+				</div>
+
+				<div class="__scheTblWrap">
+					<table class="__scheTbl">
+						<caption>달력</caption>
+						<thead>
+							<tr>
+								<th scope="col" class="sun">일</th>
+								<th scope="col">월</th>
+								<th scope="col">화</th>
+								<th scope="col">수</th>
+								<th scope="col">목</th>
+								<th scope="col">금</th>
+								<th scope="col" class="sat">토</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="sun"></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="sat">
+									<span class="num">1</span>
+									<strong class="dateName">한글날</strong>
+								</td>
+							</tr>
+							<tr>
+								<td class="sun">
+									<span class="num">2</span>
+									<strong class="dateName">정기휴관</strong>
+								</td>
+								<td>
+									<span class="num">3</span>
+								</td>
+								<td>
+									<span class="num">4</span>
+									<strong class="dateName">한글날</strong>
+									<div class="cont">
+										<a href="#" class="btn gray">신청마감</a>
+									</div>
+								</td>
+								<td>
+									<span class="num">5</span>
+									<div class="cont">
+										<a href="./appraisal4_write.html" class="btn red">신청가능</a>
+									</div>
+								</td>
+								<td>
+									<span class="num">6</span>
+								</td>
+								<td>
+									<span class="num">7</span>
+								</td>
+								<td class="sat">
+									<span class="num">8</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="sun">
+									<span class="num">9</span>
+								</td>
+								<td>
+									<span class="num">10</span>
+								</td>
+								<td>
+									<span class="num">11</span>
+								</td>
+								<td class="today">
+									<span class="num">12</span>
+									<div class="sche">
+										<a href="#" class="red"></a>
+										<a href="#" class="violet"></a>
+									</div>
+								</td>
+								<td>
+									<span class="num">13</span>
+									<div class="sche">
+										<a href="#" class="red"></a>
+										<a href="#" class="violet"></a>
+									</div>
+								</td>
+								<td>
+									<span class="num">14</span>
+								</td>
+								<td class="sat">
+									<span class="num">15</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="sun">
+									<span class="num">16</span>
+								</td>
+								<td>
+									<span class="num">17</span>
+								</td>
+								<td>
+									<span class="num">18</span>
+								</td>
+								<td>
+									<span class="num">19</span>
+								</td>
+								<td>
+									<span class="num">20</span>
+								</td>
+								<td>
+									<span class="num">21</span>
+								</td>
+								<td class="sat">
+									<span class="num">22</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="sun">
+									<span class="num">23</span>
+								</td>
+								<td>
+									<span class="num">24</span>
+								</td>
+								<td>
+									<span class="num">25</span>
+								</td>
+								<td>
+									<span class="num">26</span>
+									<div class="sche">
+										<a href="#" class="red"></a>
+										<a href="#" class="red"></a>
+										<a href="#" class="red"></a>
+										<a href="#" class="violet"></a>
+									</div>
+								</td>
+								<td>
+									<span class="num">27</span>
+								</td>
+								<td>
+									<span class="num">28</span>
+								</td>
+								<td class="sat">
+									<span class="num">29</span>
+								</td>
+							</tr>
+							<tr>
+								<td class="sun">
+									<span class="num">30</span>
+								</td>
+								<td>
+									<span class="num">31</span>
+									<div class="sche">
+										<a href="#" class="violet"></a>
+									</div>
+								</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td class="sat">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

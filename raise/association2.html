@@ -1,0 +1,158 @@
+<?
+$_dep = array(3,3,4);
+$_tit = array('양육지원','꿈자람공동육아방','제기점');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+<script>
+	function move3(){
+		if(document.rentForm.agree1.checked == true)
+	    {
+			location.href="../care/association_schedule2.php?pno=030204&mode=list4&scd=01";
+	    }
+		else
+	    {
+			alert('안내사항에 동의하셔야 합니다.');
+			document.rentForm.agree1.focus();
+	    }
+	}
+</script>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><img src="../images/icon/association.gif">꿈자람공동육아방</h2>
+			</div>
+			<div id="content">
+
+			 <?include_once '../inc/tab3_4.php';?>
+
+				<div class="tac"><img src="<?=DIR?>/images/association2-head2.jpg" alt=""></div>
+
+
+				<div class="__tit1 __mt50">
+					<h3>이용대상 </h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>만5세이하의 영유아 및 보호자</li>
+					<li>어린이집 및 보육교직원 </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용시간</h3>
+				</div>
+				<div class="__txt17 fwn __blue">[개인회원]</div>
+				<ul class="__dotlist __txt15 __mt5">
+					<li>화요일~토요일 10:00~17:30</li>
+					<li>환경정비시간 : 12:00~13:00, 15:00~15:30, 17:30~18:00(이용불가)</li>
+					<li>휴관일 : 월요일 / 일요일 / 공휴일</li>
+				</ul>
+
+				<div class="__txt17 fwn __blue __mt20">[기관회원]</div>
+				<ul class="__dotlist __txt15 __mt5">
+					<li>목요일, 10:00~12:00(1회차) </li>
+					<li>어린이집 단체 이용: 온라인 사전예약접수 필수 </li>
+					<li>이용인원:총 25명(영유아 및 인솔교사 포함) </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용방법</h3>
+				</div>
+				<table class="__tbl fix type2">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">1회차</th>
+							<th scope="col">2회차</th>
+							<th scope="col">3회차</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>10:00~12:00</td>
+							<td>13:00~15:00</td>
+							<td>15:30~17:30</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="__dotlist __txt15 __mt15">
+					<li>예약: 온라인 예약 및 현장방문 접수 후 이용(온라인 예약자 우선)</li>
+					<li>취소: 온라인 취소 </li>
+					<li>이용료: 무료 </li>
+					<li>회차별 2시간 이용 : 회차별 정원 25명(영유아 및 보호자 포함) </li>
+                    <li>예약은 이용일 2주전 오전 12시(am)부터 가능 <br>
+                        예시: 4월 4일(화) 12시(am)에 ~ 4월 18일(화)까지의 공동육아방 예약 가능</li>
+					<li>기관회원 이용일은 개인회원 1회차 예약자수 변동될 수 있음</li>
+					<li>공동육아방 사정에 따라 이용 가능 요일 및 시간은 변동될 수 있음  </li>
+				</ul>
+
+				<div class="__caution __mt30">
+					<h3>유의사항</h3>
+					<ul class="__dotlist __txt15 __mt15">
+						<li>공동육아방 예약 취소는 예약 후 이용시간 시작 전까지 가능 </li>
+						<li>회차별 이용시간 시작 후 온라인 예약불가 / 지점별 전화 확인 후 이용바람 </li>
+						<li>회차별 시작시간 이후 20분 내 미입장 시 예약 자동취소 </li>
+						<li>예약 후 시작시간 이후 취소 및 당일 불참 시 해당지점 한 주간 이용 및 예약불가(타지점은 예약 가능)</li>
+						<li>동일지점 1日 1회 제한(단, 공석이 있을 시 현장방문으로 동일지점 중복이용 가능)</li>
+						<li>공석에 한해 개인·기관회원 동시 현장방문 이용가능</li>
+						<li>놀이공간에서 음식물 섭취 불가 / 이유식 및 수유의 경우 수유실 이용 가능 </li>
+						<li>공동육아방에서 발생하는 안전사고의 모든 책임은 보호자에게 있음 </li>
+						<li style="color:red">별도의 주차공간이 없으므로 대중교통 이용바람</li>
+						<li style="color:red">법정 전염병이 있는 이용자는 (ex: 수족구 등) 입실이 제한됨</li>
+					</ul>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>제기점 위치</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>서울시 동대문구 약령시로 7길 19 동대문구육아종합지원센터제기점 2층</li>
+					<li>전화번호 ☎ 02-923-2272 </li>
+				</ul>
+
+				<div class="__map __mt30">
+					<div id="daumRoughmapContainer1606566871855" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+				</div>
+
+				<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+				<script charset="UTF-8">
+					new daum.roughmap.Lander({
+						"timestamp" : "1606566871855",
+						"key" : "236hu",
+						"mapWidth" : "640",
+						"mapHeight" : "360"
+					}).render();
+				</script>
+				<div class="__caution __mt30">
+					<h3>이용 시 주의사항 </h3>
+					<ul class="__dotlist __txt15 __mt15">
+						<li>이용 취소 시에는 반드시 홈페이지에서 취소를 합니다. </li>
+						<li>놀이공간에서 음식물 섭취 불가합니다.</li>						
+						<li>공동육아방에서 발생하는 안전사고의 모든 책임은 인솔자에게 있습니다.</li>
+						<li>공동육아방 이용 시 물품 및 놀잇감이 파손되지 않도록 소중하고 안전히 놀이해 주십시오.</li>
+						<li>냉온수기, 냉난방기기는 관계자 외 조작을 금합니다. </li>
+					</ul>
+				</div>
+
+<form name='rentForm'>
+				<div class="__apprAgree __mt10">
+					<label><input type="checkbox" name="agree1" />
+					위의 동대문구육아종합지원센터의 꿈자람공동육아방에 따라 관련 규정을 준수하고 내용에 동의합니다. </label>
+				</div>
+</form>
+
+				<div class="__mt30 tac">
+					<a href="javascript:move3();" class="__btn4" title="새창 열림">제기점 예약  신청하기</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

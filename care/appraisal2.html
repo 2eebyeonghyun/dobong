@@ -1,0 +1,39 @@
+<?
+$_dep = array(2,1,2);
+$_tit = array('보육지원','평가제','평가제 운영체계');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2>평가제</h2>
+			</div>
+			<div id="content">
+
+				<div class="__tab3">
+					<a href="<?=DIR?>/care/appraisal.html"><span>평가제 안내</span></a>
+					<a href="<?=DIR?>/care/appraisal2.html" class="active"><span>평가제 운영체계</span></a>
+					<a href="<?=DIR?>/care/appraisal3.html"><span>관련자료실</span></a>
+					<a href="<?=DIR?>/care/appraisal4.html"><span>컨설팅 사업</span></a>
+				</div>
+				<div class="__tit1">
+					<h3>평가제 안내</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>어린이집 평가과정은 평가대상 어린이집의 선정 및 통보로 시작되며, 기본사항 확인, 자체 점검보고서 제출, 현장평가, 종합평가 순으로 진행됩니다. </li>
+				</ul>
+				<div class="tac __mt30"><img src="<?=DIR?>/images/appr2-1.png" alt="" /></div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

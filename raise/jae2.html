@@ -1,0 +1,345 @@
+<?
+$_dep = array(3,2,2);
+$_tit = array('양육지원','장난감 및 도서대여 - 제기점','느티나무 도서누리터');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<!--<div class="__raiseHead">
+					<div class="info">
+						<dl>
+							<dt>
+								영유아기 <strong>책</strong>과 <br class="__p">
+								친해지며 <strong>책</strong>에 대한<br class="__p">
+								긍정적 생각을 갖고<br class="__p">
+								활동할 수 있는 공간입니다.
+							</dt>
+							<dd>
+								이용안내에서 운영시간 및 방법을 확인하시고 이용해주세요.<br>
+								검색에서는 현재 대여가능한 도서를 검색하실 수 있습니다. 
+							</dd>
+						</dl>
+					</div>
+					<div class="img"><img src="../images/head-dab4.jpg" alt=""></div>
+				</div>-->
+
+				<div class="__tit1 __mt50">
+					<h3>이용대상</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>동대문구거주 만 5세 이하의 영유아 자녀를 둔 부모, 위탁모, 예비부모 및 임신을 계획 중인 부모, 조부모 </li>
+					<li>동대문구 소재 만 5세 이하의 자녀를 둔 직장인 부모 (서류 : 재직증명서)</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용시간 </h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>화요일 ~ 토요일 : 10:00 ~ 18:00  </li>
+					<li>휴관일 : 월요일 / 일요일 / 공휴일</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용방법</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>회원카드 제시 → 도서 및 자료 대여 </li>
+					<li>대여 : 회원카드 지참 후 2층 도서누리터 이용</li>
+				</ul>
+				<table class="__tbl fix type2 __mt10">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">1회당</th>
+							<th scope="col">장난감</th>
+							<th scope="col">도서</th>
+							<th scope="col">도서만 대여할 경우</th>
+							<th scope="col">대여일수(최대)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>개인회원</td>
+							<td>2점</td>
+							<td>3권</td>
+							<td>5권</td>
+							<td>7일(14일)</td>
+						</tr>
+						<tr>
+							<td>기관회원</td>
+							<td>5점</td>
+							<td>5점</td>
+							<td>10권</td>
+							<td>7일(14일)</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="__dotlist dang __orange __txt14 __mt10">
+					<li> 당일 반납도서는 3일 후 재대여 가능하며, 사운드북 대여는 1권으로 제한함 </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>연체료</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>
+						도서가 연체되었을 경우 - 아래의 두 가지 방법 중 택1<br>
+						① 연체일수만큼 대여 불가 ( 대여 권수 x 일수)<br>
+						② 연체료 납부 후 대여 가능 (권당 100원 x 일수) 
+					</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>변상</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>도서가 심하게 파손되거나 CD 및 DVD를 잃어버리거나 고장난 경우 - 동일한 도서, CD, DVD로 변상 (2주이내) </li>
+					<li>도서 단종 또는 동일한 물품으로 구입이 어려운 경우 - 대여품과 유사한 종류 또는 기존 대여품의 제조일과 유사한 시점의 도서로 구입하여 변상 </li>
+					<li>변상금 납부 : 단종 등에 의한 구입불가의 경우 기준에 의한 변상금 납부  </li>
+				</ul>
+				<table class="__tbl fix type2 __mt10">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">구매~1년이내 도서</th>
+							<th scope="col">1년이후~2년이내 도서</th>
+							<th scope="col">2년이후~3년이내 도서</th>
+							<th scope="col">4년 이내 도서</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>구매가격의 80%</td>
+							<td>구매가격의 50%</td>
+							<td>구매가격의 30%</td>
+							<td>구매가격의 10%</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="__dotlist dang __orange __txt14 __mt10">
+					<li>구매가격 : 홈페이지 도서명에 공지 </li>
+				</ul>
+				<ul class="__dotlist __txt15 __mt10">
+					<li>30일 이상 연체 시 동일 도서로 변상 </li>
+					<li>도서비닐 분실 : 비닐 구매가격 500원 납부(2주 이내 반납 시 반환) </li>
+				</ul>
+
+				<div class="__caution __mt30">
+					<h3>유의사항</h3>
+					<ul class="__dotlist __txt15 __mt15">
+						<li>도서대여 시 회원카드를 반드시 지참해야 합니다.</li>
+						<li>도서 바코드가 손상되지 않도록 사용해주세요.</li>
+						<li>장난감(도서)의 고장, 파손, 분실(제6조 1항) 또는 구성물 분실(제6조 3항)에 따라 2주의 유예기간 이후부터 최대 한 달까지 변상 또는 구성물이 반납되지 않는 경우, 대여서비스이용 제한 및 센터에서 진행되는 교육 및 프로그램 참여가 제한될 수 있습니다. </li>
+						<li>대여 물품의 파손 및 구성물 미반납이 3회(누적 기록) 초과 시, 대여서비스이용이 제한될 수 있습니다.</li>
+					</ul>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>회원구분</h3>
+				</div>
+				<table class="__tbl type2">
+					<caption>TABLE</caption>
+					<thead>
+						<tr>
+							<th scope="col">구분</th>
+							<th scope="col">대상</th>
+							<th scope="col">구비서류</th>
+							<th scope="col">연회비</th>
+						</tr>
+					</thead>
+					<tbody>
+
+						<tr>
+							<td rowspan="10">
+								개인회원
+							</td>
+							<td>
+								부모
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본(자녀포함)</li>
+								</ul>
+							</td>
+							<td>
+								10,000원
+							</td>
+						</tr>
+						<tr>
+							<td>
+								조부모
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>조부모 신분증</li>
+									<li>조부모 주민등록등본</li>
+									<li>직계자녀 가족관계증명서(손자녀포함)</li>
+								</ul>
+							</td>
+							<td>
+								10,000원
+							</td>
+						</tr>
+						<tr>
+							<td>
+								예비부모 및 임산부
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+								</ul>
+							</td>
+							<td>
+								10,000원
+							</td>
+						</tr>
+						<tr>
+							<td>
+								위탁모 가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>본인 신분증</li>
+									<li>위탁모자원봉사 신청서</li>
+								</ul>
+							</td>
+							<td>
+								10,000원
+							</td>
+						</tr>
+						<tr>
+							<td>
+								다자녀가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+									<li>다둥이 행복카드</li>
+								</ul>
+							</td>
+							<td>
+								면제
+							</td>
+						</tr>
+						<tr>
+							<td>
+								장애인가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+									<li>장애인 복지카드</li>
+								</ul>
+							</td>
+							<td>
+								면제
+							</td>
+						</tr>
+						<tr>
+							<td>
+								한부모가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+									<li>한부모가족증명서</li>
+								</ul>
+							</td>
+							<td>
+								면제
+							</td>
+						</tr>
+						<tr>
+							<td>
+								차상위계층가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+									<li>차상위계층증빙서류</li>
+								</ul>
+							</td>
+							<td>
+								면제
+							</td>
+						</tr>
+						<tr>
+							<td>
+								기초생활수급가정
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>주민등록등본</li>
+									<li>생계, 의료급여수급자 증명서</li>
+								</ul>
+							</td>
+							<td>
+								면제
+							</td>
+						</tr>
+						<tr>
+							<td>
+								관내 보육교직원
+							</td>
+							<td class="tal">
+								 <ul class="__dotlist">
+									<li>부모 신분증</li>
+									<li>재직증명서</li>
+								 </ul>
+							</td>
+							<td>
+								10,000원
+							</td>
+						</tr>
+						<tr>
+							<td>
+								기관회원
+							</td>
+							<td>
+								관내 어린이집
+							</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>고유번호증 또는 어린이집 인가증</li>
+								</ul>
+							</td>
+							<td>
+								20,000원
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<ul class="__dotlist dang __orange __txt14 __mt10">
+					<li>등본상에 자녀가 등재된 동대문구민에 한함. (등본은 최근 1개월 이내 발급분)</li>
+					<li>위임하고자 할 경우 위임장 작성 후 제출. (위임장 양식은 공지사항에서 위임장 검색) </li>
+				</ul>
+				<ul class="__dotlist __txt14 __mt5 dash">
+					<li>구비서류: 위임자의 신분증, 위임받는 자의 신분증, 등본 1부(최근 1개월)</li>
+				</ul>
+
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

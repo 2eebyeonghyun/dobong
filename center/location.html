@@ -1,0 +1,120 @@
+<? 
+$_dep = array(1,7,1);
+$_tit = array('센터소개','오시는 길','도봉구육아종합지원센터');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php"; 
+?>
+
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section center-page location-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/inc/tab1.php"; ?>
+
+                    <div class="__tit1">
+                        <h3>도봉구육아종합지원센터 위치</h3>
+                    </div>
+                    <ul class="__dotlist __txt15">
+                        <li>서울시 도봉구 방학로 12길 28</li>
+                        <li>전화번호 ☎ 02-3494-3341</li>
+                    </ul>
+
+                    <div class="__map __mt20">
+                        <div id="daumRoughmapContainer1715237135262" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    </div>
+
+                    <div class="__tit1 __mt50">
+                        <h3>교통편 안내</h3>
+                    </div>
+                    <div class="__loc">
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc1.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">쌍문역 2번출구</p>
+                                            <p>마을버스07번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">수유역 6번출구</p>
+                                            <p>1119번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">창동역 1번출구</p>
+                                            <p>노원15번, 1119번</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc2.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">간선노선</p>
+                                            <p>130번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">지선노선</p>
+                                            <p>1119번, 1128번, 1144번, 노원15번</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="information_txt">* 버스하차지점: 방학동 신동아APT (마을버스07번: 도봉여성세터하차)</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc3.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">방학사거리에서 우이동 방향</p>
+                                            <p>1.1km직진, GS셀프주유소에서 우회전 후 직진 130m</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc4.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>GS셀프주유소에서 돌아서 직진 130m (3분거리)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1715237135262",
+		"key" : "2jacq",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+</body>
+</html>

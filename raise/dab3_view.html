@@ -1,0 +1,160 @@
+<?
+$_dep = array(3,1);
+$_tit = array('양육지원','장난감대여사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/raise/dab3.html" class="active"><span>답십리점</span></a>
+					<a href="<?=DIR?>/raise/jae3.html"><span>제기점</span></a>
+				</div>
+				<div class="__tit2">
+					<h3>아이들에게 재미있는 <strong>장난감</strong>을 찾아주세요!</h3>
+				</div>
+
+				<div class="__rentHead">
+					<div class="head">
+						<div class="img"><img src="http://placehold.it/284x210" alt=""></div>
+						<div class="info __rendInfo">
+							<dl class="wide">
+								<dt>장난감명</dt>
+								<dd>3단변신 스마트 드라이버</dd>
+							</dl>
+							<dl>
+								<dt>영역</dt>
+								<dd>탐색/조작</dd>
+							</dl>
+							<dl>
+								<dt>연령</dt>
+								<dd>37개월이상</dd>
+							</dl>
+							<dl>
+								<dt>구성품</dt>
+								<dd>본체 1개</dd>
+							</dl>
+							<dl>
+								<dt>구입가격</dt>
+								<dd>76,800원</dd>
+							</dl>
+							<dl>
+								<dt>보유수량</dt>
+								<dd>1개</dd>
+							</dl>
+							<dl>
+								<dt>대여횟수</dt>
+								<dd>378회</dd>
+							</dl>
+							<dl class="wide">
+								<dt>대여상태</dt>
+								<dd>
+									DM01TD00028002 
+									<span class="__ico1 green">대여중</span>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="bot">
+						오토바이, 자동차에서 제트기로 전환 할 수 있습니다. 문자, 파닉스, 철자, 숫자 등을 배울 수 있으며 진동효과는 아이들이 실제로 운전하는것과 같은 재미를 즐길 수 있습니다.
+					</div>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>대여상태</h3>
+				</div>
+				<table class="__tblList respond3">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:85px;">
+						<col>
+						<col style="width:120px;">
+						<col style="width:150px;">
+						<col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col" class="__p">번호</th>
+							<th scope="col">등록번호</th>
+							<th scope="col">대여상태</th>
+							<th scope="col">반납예정일</th>
+							<th scope="col">예정일</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="__p">1829</td>
+							<td data-th="등록번호">DM01TD00028002</td>
+							<td data-th="대여상태"><span class="__ico1 orange">대여가능</span></td>
+							<td data-th="반납예정일">2020-10-14</td>
+							<td data-th="예정일">
+								<ul class="__form">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">예약시간을 선택해주세요</option>
+										</select>
+									</li>
+									<li class="space"></li>
+									<li style="width:60px;"><button type="button" class="__btn2 __w100p">예약</button></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="__p">1829</td>
+							<td data-th="등록번호">DM01TD00028002</td>
+							<td data-th="대여상태"><span class="__ico1 green">대여중</span></td>
+							<td data-th="반납예정일">2020-10-14</td>
+							<td data-th="예정일">
+								<ul class="__form">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">예약시간을 선택해주세요</option>
+										</select>
+									</li>
+									<li class="space"></li>
+									<li style="width:60px;"><button type="button" class="__btn2 __w100p">예약</button></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td class="__p">1829</td>
+							<td data-th="등록번호">DM01TD00028002</td>
+							<td data-th="대여상태"><span class="__ico1 blue">세척중</span></td>
+							<td data-th="반납예정일">2020-10-14</td>
+							<td data-th="예정일">
+								<ul class="__form">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">예약시간을 선택해주세요</option>
+										</select>
+									</li>
+									<li class="space"></li>
+									<li style="width:60px;"><button type="button" class="__btn2 __w100p">예약</button></li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="#" class="__btnList"><span>목록</span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

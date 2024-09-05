@@ -1,0 +1,111 @@
+<?
+$_dep = array(3,2);
+$_tit = array('양육지원','도서대여사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/raise/dab4.html" class="active"><span>답십리점</span></a>
+					<a href="<?=DIR?>/raise/jae4.html"><span>제기점</span></a>
+				</div>
+				<div class="__tit2">
+					<h3>부모와 아이들에게 <strong>유익한 책</strong>을 찾아주세요!</h3>
+				</div>
+
+				<div class="__search2">
+					<ul>
+						<li class="sel">
+							<select name="" id="" class="__inp">
+								<option value="">답십리전체</option>
+							</select>
+						</li>
+						<li class="sel">
+							<select name="" id="" class="__inp">
+								<option value="">연령전체</option>
+							</select>
+						</li>
+						<li class="inp">
+							<input type="text" class="__inp" placeholder="장난감명을 입력해주세요">
+						</li>
+						<li class="btn"><button type="submit" class="__btn2">검색</button></li>
+					</ul>
+				</div>
+
+				<div class="__topArea">
+					<div class="lef">
+						<div class="all">
+							총 보유수량 <span class="__blue">734</span> 개 / 검색결과 <span class="__orange">734</span> 개
+						</div>
+					</div>
+				</div>
+
+				<table class="__tblList respond3">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:85px;">
+						<col>
+						<col style="width:180px;">
+						<col style="width:180px;">
+						<col style="width:150px;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">분류</th>
+							<th scope="col">도서명</th>
+							<th scope="col">출판사</th>
+							<th scope="col">저자명</th>
+							<th scope="col">대여상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td data-th="분류">1829</td>
+							<td data-th="도서명" class="subject"><a href="./dab4_view.html">(내 친구 헝겊책) 어슬렁 거북 : 바닷속 친구들</a></td>
+							<td data-th="출판사">애플비</td>
+							<td data-th="저자명"><span class="ovh">편집부 글, 편집부 편집부 글, 편집부 </span></td>
+							<td data-th="대여상태"><span class="__ico1 orange">대여가능</span></td>
+						</tr>
+						<tr>
+							<td data-th="분류">1829</td>
+							<td data-th="도서명" class="subject"><a href="./dab4_view.html">(내 친구 헝겊책) 어슬렁 거북 : 바닷속 친구들</a></td>
+							<td data-th="출판사">애플비</td>
+							<td data-th="저자명"><span class="ovh">편집부 글, 편집부 편집부 글, 편집부 </span></td>
+							<td data-th="대여상태"><span class="__ico1 green">대여중</span></td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="cen">
+						<div class="__paging">
+							<a href="#" class="arr first"><span class="hide">첫 페이지</span><i class="axi axi-angle-double-left" aria-hidden="true"></i></a>
+							<a href="#" class="arr prev"><span class="hide">이전 페이지</span><i class="axi axi-angle-left" aria-hidden="true"></i></a>
+							<strong class="num active">1</strong>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+							<a href="#" class="arr next"><span class="hide">다음 페이지</span><i class="axi axi-angle-right" aria-hidden="true"></i></a>
+							<a href="#" class="arr last"><span class="hide">마지막 페이지</span><i class="axi axi-angle-double-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?
+$_dep = array(3,1,7);
+$_tit = array('양육지원','장난감대여사업','이용수칙');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><img src="../images/icon/toy.gif">장난감대여사업</h2>
+			</div>
+			<div id="content">
+			<? include_once '../inc/tab3.php'; ?>
+
+
+
+				<div class="__greenHead">
+					<dl>
+						<dt>육아종합지원센터 이용수칙에 대해 알려드립니다.</dt>
+						<dd>
+							아래 이용수칙에 대해서 숙지하시고, 많은 주민들이 함께 이용할 수 있도록 이용수칙을 잘 지켜주시기 바랍니다.
+						</dd>
+					</dl>
+				</div>
+
+
+				<div class="__tit1 __mt50">
+					<h3>이용수칙</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>동대문구육아종합지원센터 내에서는 질서를 유지하며, 다른 이용자에게 방해가되지 않도록 유의해 주시기 바랍니다.</li>
+					<li>동대문구육아종합지원센터 내에서는 전 구역이 금연구역이므로 흡연을 삼가하여 주시기 바랍니다.</li>
+					<li>느티나무 책방, 느티나무 장난감방, 느티나무 정보실, 배움터 등에서는 음식물을 삼가하여 주시기 바랍니다.</li>
+					<li>부모님들과 영유아들이 쾌적하고 안전하게 지낼 수 있도록 질서를 지켜주시기 바랍니다.</li>
+					<li>동대문구육아종합지원센터 내의 시설과 물건은 우리 모두의 재산이오니 소중히 다루어 주십시오.</li>
+					<li>행사 및 프로그램 참여시 원활한 진행과 참여를 위하여 이용규칙을 잘 지켜주시기 바랍니다.</li>
+					<li>
+						동대문구육아종합지원센터에서는 다음에 해당하는 사람에 대해서는 입실을 허용하지 않을 수 있으며, 입실 후에라도 퇴실을 명할 수 있으니 유의를 부탁드립니다.
+						<ul class="__dotlist dash __txt15 __mt5">
+							<li>정신이상자</li>
+							<li>타인에게 혐오감을 주는 자</li>
+							<li>법정 전염병이 있는 자</li>
+							<li>술에 취한 자</li>
+							<li>타인에게 위협이 되거나 다른 이용자에게 방해가 될 물품을 휴대한 자</li>
+							<li>기타 안전 또는 질서유지 등을 위해 입실이 부적당하다고 인정되는 자</li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?
+$_dep = array(5,4);
+$_tit = array('커뮤니티','마음톡톡(상담실)');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<div class="__heartHead">
+					<div class="area">
+						<div class="ico"><img src="../images/ico-heart.png" alt=""></div>
+						<div class="info">
+							<h3><strong>마음톡톡</strong>은 동대문구육아종합지원센터 상담실의 또 다른 이름입니다.</h3>
+							<div class="__txt15 __mt10">
+								동대문구육아종합지원센터에서는 어린이집 운영프로그램, 자녀양육에 관한 <span class="__orange">다양한 상담을 자문위원을 통해</span> 진행하고 
+								있습니다. 궁금하신 사항을 작성해주시면 친철하고 전문적으로 상담해 드리겠습니다.
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="__caution type3 __mt20">
+					<h3>비방글, 욕설, 상업적인 내용등의 글은 관리자가 통보없이 삭제합니다.</h3>
+				</div>
+
+				<table class="__tblView respond __mt15">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:140px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">공개설정</th>
+							<td>
+								<label><input type="checkbox"> 비공개</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">분류</th>
+							<td>
+								<select name="" id="" class="__inp __m-w50p">
+									<option value="">보육교직원 상담</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">제목</th>
+							<td><input type="text" class="__inp"></td>
+						</tr>
+						<tr>
+							<th scope="row">내용</th>
+							<td>
+								<textarea name="" id="" class="__inp __m-h100" style="height:400px;">에디터</textarea>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">첨부파일</th>
+							<td><input type="file"></td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="#" class="__btn1 gray">취소</a> &nbsp;
+						<button type="submit" class="__btn1">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

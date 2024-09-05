@@ -1,0 +1,56 @@
+<?
+$_dep = array(3,3,1);
+$_tit = array('양육지원','꿈자람공동육아방','설치현황');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><img src="../images/icon/association.gif">꿈자람공동육아방</h2>
+			</div>
+			<div id="content">
+
+			<div class="__tab31">
+					<a href="<?=DIR?>/raise/association.html" class="active"><span>설치현황</span></a>
+					<a href="<?=DIR?>/raise/association1.html"><span>답십리점</span></a>
+					<a href="<?=DIR?>/raise/association2.html"><span>제기점</span></a>
+					<a href="<?=DIR?>/raise/association3.html"><span>배봉산점</span></a>
+					<a href="<?=DIR?>/raise/association4.html"><span>장안2동점</span></a>
+					<a href="<?=DIR?>/raise/association5.html"><span>제기2호점</span></a>
+					<a href="<?=DIR?>/raise/association6.html"><span>장안1동점</span></a>
+				</div>
+
+				<div class="__vilimg __mt40">
+					<img src="<?=DIR?>/images/vill1-2.png" alt="" usemap="#vill1-2" style="border: 0;">
+				</div>
+
+			
+
+<map name="vill1-2">
+
+    <area shape="rect" coords="121,161,194,234" href="<?=DIR?>/raise/association5.html" target="" alt="" />
+    <area shape="rect" coords="134,243,199,322" href="<?=DIR?>/raise/association2.html" target="" alt="" />
+    <area shape="rect" coords="239,359,313,435" href="<?=DIR?>/raise/association1.html" target="" alt="" />
+    <area shape="rect" coords="307,257,376,333" href="<?=DIR?>/raise/association3.html" target="" alt="" />
+    <area shape="rect" coords="400,289,482,375" href="<?=DIR?>/raise/association4.html" target="" alt="" />
+    <area shape="rect" coords="366,417,449,491" href="<?=DIR?>/raise/association6.html" target="" alt="" />
+
+
+
+
+
+</map>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

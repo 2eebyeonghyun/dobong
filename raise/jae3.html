@@ -1,0 +1,153 @@
+<?
+$_dep = array(3,2);
+$_tit = array('양육지원','장난감대여사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/raise/dab3.html"><span>답십리점</span></a>
+					<a href="<?=DIR?>/raise/jae3.html" class="active"><span>제기점</span></a>
+				</div>
+				<div class="__search2">
+					<ul>
+						<li class="sel">
+							<select name="" id="" class="__inp">
+								<option value="">답십리전체</option>
+							</select>
+						</li>
+						<li class="sel">
+							<select name="" id="" class="__inp">
+								<option value="">연령전체</option>
+							</select>
+						</li>
+						<li class="inp">
+							<input type="text" class="__inp" placeholder="장난감명을 입력해주세요">
+						</li>
+						<li class="btn"><button type="submit" class="__btn2">검색</button></li>
+					</ul>
+				</div>
+
+				<div class="__topArea">
+					<div class="lef">
+						<div class="all">
+							총 보유수량 <span class="__blue">734</span> 개 / 검색결과 <span class="__orange">734</span> 개
+						</div>
+					</div>
+					<div class="rig">
+						<div class="lab">
+							<label><input type="radio"> 전체</label>
+							<label><input type="radio"> 대여중</label>
+							<label><input type="radio"> 대여가능</label>
+							<label><input type="radio"> 예약중</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="__galList">
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 green">대여중</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 orange">대여가능</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 blue">세척중</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 green">대여중</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 orange">대여가능</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="box">
+						<a href="./jae3_view.html" class="in">
+							<div class="img"><span style="background-image:url(http://placehold.it/284x210/cccccc);"></span></div>
+							<div class="info">
+								<p class="subject">3단변신 스마트 드라이버</p>
+								<p class="count">대여횟수 378회</p>
+								<p class="ico">
+									<span class="__ico1 blue">세척중</span>
+								</p>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="__botArea">
+					<div class="cen">
+						<div class="__paging">
+							<a href="#" class="arr first"><span class="hide">첫 페이지</span><i class="axi axi-angle-double-left" aria-hidden="true"></i></a>
+							<a href="#" class="arr prev"><span class="hide">이전 페이지</span><i class="axi axi-angle-left" aria-hidden="true"></i></a>
+							<strong class="num active">1</strong>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+							<a href="#" class="arr next"><span class="hide">다음 페이지</span><i class="axi axi-angle-right" aria-hidden="true"></i></a>
+							<a href="#" class="arr last"><span class="hide">마지막 페이지</span><i class="axi axi-angle-double-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

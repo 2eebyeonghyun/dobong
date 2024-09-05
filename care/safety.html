@@ -1,0 +1,180 @@
+<?
+$_dep = array(2,5);
+$_tit = array('보육지원','어린이집 안전관리사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2>
+					<!-- <img src="../images/icon/safety.gif"><?=end($_tit)?> -->
+					<img src="../images/icon/sub_ico_renew1.png"><?=end($_tit)?>
+				</h2>
+			</div>
+			<div id="content">
+
+				<div class="__greenHead">
+					<dl>
+						<dt>동대문구육아종합지원센터는</dt>
+						<dd>
+							관내 어린이집 시설 관리에 전문성이 있는 안전관리 전문요원을 파견하여 안전관련 규정에 따라 안전진단 및 경보수를 지원함으로 안전한 보육환경 조성에 기여하고자 합니다.
+
+						</dd>
+					</dl>
+				</div>
+
+				
+
+				<div class="__tit1 __mt50">
+					<h3>대상 </h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>
+						동대문구 관내 모든 어린이집
+					</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>신청방법</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>
+						동대문구육아종합지원센터 홈페이지(www.ddmccic.or.kr)에서 어린이집 안전진단·경보수 신청서 다운로드 후 e-mail(ddmccic2009@hanmail.net)로 제출</li>
+				</ul>
+				
+
+				<div class="__tit1 __mt50">
+					<h3>어린이집 방문 일정 안내</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>
+						보육통합정보시스템 업무연락, 유선 및 문자 안내
+					</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>어린이집 안전진단</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>
+						어린이집 안전관리전문요원이 어린이집에 방문하여 소방,시설,안전 관련 법령 및 서울형 평가 항목을 기반으로 제작된 어린이집 안전진단 목록에 
+						대해 점검하고 결과를 어린이집에 안내합니다.
+					</li>
+				</ul>
+
+				<table class="__tbl type2 __mt20">
+					<caption>TABLE</caption>
+					<tbody>
+						<tr>
+							<td rowspan="2">상시</td>
+							<td>필수</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>노후시설(준공 30년 이상)</li>
+									<li>신규시설(개원 1년 이내) </li>
+								</ul>
+							</td>
+							<td rowspan="3">
+								월요일~ 금요일<br>
+								(오전 / 오후)<br>
+<!--								* 신청 접수 후 일정 조율하여 <br>1일 2~3개소 지원-->
+                                신청 접수 후 일정 조율하여 <br> 신청 메일로 확정일자 안내
+							</td>
+						</tr>
+						<tr>
+							<td>선택</td>
+							<td class="tal">
+								<ul class="__dotlist">
+<!--
+									<li>안전진단, 경보수 신청 시설</li>
+									<li>경보수 신청 시 안전진단 동시 실시됨 </li>
+-->
+                                    <li>안전진단</li>
+                                    <li>
+                                        경보수(신청시, 안전진단 선행하여 진행 필수)
+                                        <br>
+                                        (※ 6개월 이내 안전진단 참여한 경우, 추가 경보수 단독 진행 가능)
+                                    </li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>내용</td>
+							<td class="tal" colspan="2">
+								<ul class="__dotlist">
+									<li>소방, 시설, 안전 관련 법령을 기반으로 안전진단</li>
+									<li>추가 안전진단 : 동절기, 우기, 해빙기 등 필요시 실시 </li>
+								</ul>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<div class="__tit1 __mt50">
+					<h3>어린이집 경보수지원</h3>
+				</div>
+				<table class="__tbl type2 __mt20">
+					<caption>TABLE</caption>
+					<tbody>
+						<tr>
+							<td>대상</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>경보수를 희망하는 동대문구 관내 모든 어린이집</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<td>내용</td>
+							<td class="tal">
+								<ul class="__dotlist">
+									<li>전기·수도 고장, 하수구 막힘, 출입문 보수 , 교구장, 서랍장, 경첩 수리, 가구 및 게시판 간단 수리 등</li>
+								</ul>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<ul class="__dotlist __txt15 dang __mt15">
+					<li>공구 및 간단한 부품은 지참하여 어린이집 방문하나 그 밖에 필요한 부품은 어린이집에서 준비</li>
+					<li>경보수 제공 항목 외 전문 시공 지원 불가</li>
+					<li>어린이집 안전관리 전문요원 파견 중 이동 시간 및 경보수 내용에 따라 1일 파견 횟수 조정 될 수 있음 </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>안전관리전문요원 파견절차</h3>
+				</div>
+				<div class="tac __mt50"><img src="<?=DIR?>/images/safety1-1.gif" alt=""></div>
+
+
+				<div class="__mt30 tac">
+					<a href="<?=DIR?>/images/어린이집 안전진단 신청서.hwp" class="__btn3 __m-w100p" download="" target="_blank">어린이집 안전진단 신청서 다운로드 <i class="axi axi-file-download"></i></a>
+					<a href="<?=DIR?>/images/어린이집 경보수 지원 신청서.hwp" class="__btn3 __m-w100p __mmt5" download="" target="_blank">어린이집 경보수 신청서 다운로드  <i class="axi axi-file-download"></i></a>
+					<a href="<?=DIR?>/images/어린이집 안전진단·경보수 만족도 조사.hwp" class="__btn3 __m-w100p __mmt5" download="" target="_blank">어린이집 안전진단·경보수 만족도 조사서  다운로드 <i class="axi axi-file-download"></i></a>
+				</div>
+
+				<div class="__caution __mt50">
+					<h3>유의사항</h3>
+					<ul class="__dotlist __txt15 __mt15">
+						<li>선착순 및 우선 이용 대상 접수로 인해 희망일 배치가 어려울 수 있으니 희망하시는 2지망 날짜를 꼭 기록해주시기 바랍니다. </li>
+						<li>신청 취소는 방문 3일 전까지 유선 연락하시기 바랍니다.</li>
+						<li>신청 후 당일 취소 할 경우 추후 지원에 제한이 있을 수 있습니다.</li>
+                        <li>문의 : 동대문구육아종합지원센터 담당자 보육전문요원 하혜림 (070-4922-2473)</li>
+					</ul>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

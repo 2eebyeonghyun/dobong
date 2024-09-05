@@ -1,0 +1,105 @@
+<?
+$_dep = array(2,6,2);
+$_tit = array('보육지원','보육행정 및 어린이집 지원','관계법령');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2>보육행정 및 어린이집 지원</h2>
+			</div>
+			<div id="content">
+			<div class="__tab3">
+					<a href="<?=DIR?>/care/support.html"><span>보육사업 안내</span></a>
+					<a href="<?=DIR?>/care/support2.html" class="active"><span>관계법령</span></a>
+				</div>
+
+				<div class="__topArea">
+					<div class="lef">
+						<div class="all">
+							전체 <span class="__blue">23,343</span> 건
+						</div>
+					</div>
+					<div class="rig">
+						<div class="__search">
+							<select name="" id="">
+								<option value="">제목</option>
+							</select>
+							<input type="text" />
+							<button type="submit"><i class="axi axi-search"></i></button>
+						</div>
+					</div>
+				</div>
+
+				<table class="__tblList respond2">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:85px;"/>
+						<col />
+						<col style="width:85px;"/>
+						<col style="width:150px;"/>
+						<col style="width:70px;"/>
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">번호</th>
+							<th scope="col">제목</th>
+							<th scope="col">첨부</th>
+							<th scope="col">등록일</th>
+							<th scope="col">조회</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="notice">
+							<td><span class="__icoNotice">공지</span></td>
+							<td class="subject"><a href="./support2_view.html">유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제</a></td>
+							<td><a href="#"><img src="<?=DIR?>/images/ico-file.gif" alt="FILE" /></a></td>
+							<td>2020-10-14</td>
+							<td>54</td>
+						</tr>
+						<tr>
+							<td>1829</td>
+							<td class="subject"><a href="./support2_view.html">유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제</a><img src="<?=DIR?>/images/ico-new.gif" alt="NEW" /></td>
+							<td><a href="#"><img src="<?=DIR?>/images/ico-file.gif" alt="FILE" /></a></td>
+							<td>2020-10-14</td>
+							<td>54</td>
+						</tr>
+						<tr>
+							<td>1829</td>
+							<td class="subject"><a href="./support2_view.html">유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제 유비무환(有備無患) 사전에 준비하는 평가제</a></td>
+							<td><a href="#"><img src="<?=DIR?>/images/ico-file.gif" alt="FILE" /></a></td>
+							<td>2020-10-14</td>
+							<td>54</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="cen">
+						<div class="__paging">
+							<a href="#" class="arr first"><span class="hide">첫 페이지</span><i class="axi axi-angle-double-left" aria-hidden="true"></i></a>
+							<a href="#" class="arr prev"><span class="hide">이전 페이지</span><i class="axi axi-angle-left" aria-hidden="true"></i></a>
+							<strong class="num active">1</strong>
+							<a href="#" class="num">2</a>
+							<a href="#" class="num">3</a>
+							<a href="#" class="num">4</a>
+							<a href="#" class="num">5</a>
+							<a href="#" class="arr next"><span class="hide">다음 페이지</span><i class="axi axi-angle-right" aria-hidden="true"></i></a>
+							<a href="#" class="arr last"><span class="hide">마지막 페이지</span><i class="axi axi-angle-double-right" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<? 
+$_dep = array(1,7,3);
+$_tit = array('센터소개','오시는 길','쓰담쓰담 열린육아방');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php"; 
+?>
+
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section center-page location-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/inc/tab1.php"; ?>
+
+                    <div class="__tit1">
+                        <h3>쓰담쓰담 열린육아방 위치</h3>
+                    </div>
+                    <ul class="__dotlist __txt15">
+                        <li>서울시 도봉구 도당로 70 LH 쏘네하임 1층</li>
+                        <li>전화번호 ☎ 02-955-3341</li>
+                    </ul>
+
+                    <div class="__map __mt20">
+                        <div id="daumRoughmapContainer1715237876837" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    </div>
+
+                    <div class="__tit1 __mt50">
+                        <h3>교통편 안내</h3>
+                    </div>
+                    <div class="__loc">
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc2.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">지선노선</p>
+                                            <p>1126번(방학동삼익사라믹 방면, 도깨비시장 방면)</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">지선노선</p>
+                                            <p>1139번(도깨비시장 방면)</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="information_txt">* 버스하차지점: 방학동신우빌라</p>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc3.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">방학사거리에서 우이동 방향</p>
+                                            <p>680m 직진 후 성원아파트 사거리에서 방학2동 방면으로 우회전하여 직진 210m</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc4.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>방학동 성원아파트 사거리에서 도깨비시장 방면으로 200m</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1715237876837",
+		"key" : "2jad9",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+</body>
+</html>

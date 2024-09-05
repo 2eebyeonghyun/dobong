@@ -1,0 +1,76 @@
+<?
+$_dep = array(7,4);
+$_tit = array('마이페이지','회원탈퇴');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<div class="__leaveHead __mb50">
+					<h3>
+						<strong>회원탈퇴</strong>를 하시면 제공되었던 서비스를 이용하실 수 없습니다.
+					</h3>
+					<div class="__txt15 __mt10">
+						불편이나 불만사항을 말씀해 주시면, 동대문구육아종합지원센터에서 적극적으로 해결하도록 하겠습니다.<br>
+						회원탈퇴시 회원님께 제공되었던 서비스의 이용이 불가능하오니 신중히 고려해주세요.
+					</div>
+				</div>
+
+				<div class="__caution type4 __mb20">
+					<h3>탈퇴사유</h3>
+				</div>
+
+				<table class="__tblView respond">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:180px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">회원 아이디</th>
+							<td>
+								홍길동
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">비밀번호</th>
+							<td>
+								<input type="password" class="__inp __m-w100p" style="width:270px;">
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">탈퇴사유</th>
+							<td>
+								<textarea name="" id="" class="__inp" style="height:80px;"></textarea>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__mt30 tac __orange __txt15">※ 회원님께서 보내주신 탈퇴사유는 동대문구육아종합지원센터의 더 좋은 서비스를 위해 소중히 여기겠습니다.</div>
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="#" class="__btn1 gray">취소</a> &nbsp;
+						<button type="submit" class="__btn1">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

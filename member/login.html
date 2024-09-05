@@ -1,0 +1,60 @@
+<?
+$_dep = array(6,1);
+$_tit = array('회원관련','로그인');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+				<div class="__login">
+					<dl class="slogan">
+						<dt>
+							<span>부모·아이 그리고 선생님의 행복파트너</span><br>
+							동대문구육아종합지원센터에 오신 여러분들을 환영합니다.
+						</dt>
+						<dd>로그인을 하시면 더욱 많은 서비스를 편리하게 이용하실 수 있습니다. </dd>
+					</dl>
+					<ul class="form">
+						<li class="id"><input type="text" placeholder="아이디를 입력해주세요"/></li>
+						<li class="pass"><input type="password" placeholder="비밀번호를 입력해주세요"/></li>
+					</ul>
+					<button type="submit" class="btn">로그인</button>
+					<ul class="bot">
+						<li>
+							<dl>
+								<dt>신규회원가입</dt>
+								<dd>
+									회원가입을 통해 더 많은 서비스를 
+									이용하실 수 있습니다. 
+								</dd>
+							</dl>
+							<p><a href="./join.html"><span>신규 회원가입</span><i class="axi axi-angle-right"></i></a></p>
+						</li>
+						<li>
+							<dl>
+								<dt>아이디/비밀번호 찾기</dt>
+								<dd>
+									가입 당시의 기재하신 아이디와 
+									비밀번호를 분실하셨는지요?
+								</dd>
+							</dl>
+							<p><a href="./find_id.html"><span>아이디/비밀번호 찾기</span><i class="axi axi-angle-right"></i></a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

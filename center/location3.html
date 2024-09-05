@@ -1,0 +1,116 @@
+<? 
+$_dep = array(1,7,4);
+$_tit = array('센터소개','오시는 길','서울형키즈카페 도봉2동점');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php"; 
+?>
+
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section center-page location-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/inc/tab1.php"; ?>
+
+                    <div class="__tit1">
+                        <h3>서울형키즈카페 도봉2동점 위치</h3>
+                    </div>
+                    <ul class="__dotlist __txt15">
+                        <li>서울특별시 도봉구 마들로 668 (도봉동)</li>
+                        <li>전화번호 ☎ 02-3492-7773</li>
+                    </ul>
+
+                    <div class="__map __mt20">
+                        <div id="daumRoughmapContainer1715238133941" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                    </div>
+
+                    <div class="__tit1 __mt50">
+                        <h3>교통편 안내</h3>
+                    </div>
+                    <div class="__loc">
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc1.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">방학역 2번출구</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc2.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">도봉구청</p>
+                                            <p>146번, 1127번, 도봉08번, 도봉09번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">방학역</p>
+                                            <p>1139번</p>
+                                        </li>
+                                        <li>
+                                            <p class="__blue fwn">신도봉시장, 도봉구청, 방학북부역</p>
+                                            <p>36번, 56번, 106번, 107번, 118번, 133번, 140번, 141번, 142번, 150번, 160번</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc3.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>
+                                            <p class="__blue fwn">도봉구청 사거리에서 도봉중학교 방향</p>
+                                            <p>60m</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="tbl">
+                                <div class="img"><img src="<?=DIR?>/images/ico-loc4.gif" alt=""></div>
+                                <div class="info">
+                                    <ul class="__dotlist __txt15">
+                                        <li>도봉구청에서 서원아파트 방면으로 70m</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1715238133941",
+		"key" : "2jadd",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+
+</body>
+</html>

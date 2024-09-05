@@ -1,0 +1,117 @@
+<?
+$_dep = array(2,8);
+$_tit = array('보육지원','공동육아방 신청');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2>공동육아방 신청</h2>
+			</div>
+			<div id="content">
+
+				<div class="__tab3">
+					<a href="<?=DIR?>/care/association_schedule.html" class="active"><span>답십리점 공동육아방 이용신청</span></a>
+					<a href="<?=DIR?>/care/association_schedule.html"><span>제기점 공동육아방 이용신청</span></a>
+					<a href="<?=DIR?>/care/association_schedule.html"><span>배봉산점 공동육아방 이용신청</span></a>
+					<a href="<?=DIR?>/care/association_schedule.html"><span>장안2동점 공동육아방 이용신청</span></a>
+					<a href="<?=DIR?>/care/association_schedule.html"><span>제기2호점 공동육아방 이용신청</span></a>
+					<a href="<?=DIR?>/care/association_schedule.html"><span>장안1동점 공동육아방 이용신청</span></a>
+				</div>
+
+				<div class="__headSlogan">
+					<p>
+						이용안내에서 운영시간 및 방법을 확인하시고 이용해주세요.
+					</p>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>이용장소</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>[답십리점] 동대문구육아종합지원센터 답십리점 2층 </li>
+					<li>[제기점] 동대문구육아종합지원센터 제기점 2층 </li>
+					<li>[배봉산점] 동대문구 전농로 16길 97 숲속도서관 1층</li>
+					<li>[장안2동점] 동대문구 한천로 28길9(장안동, 시온아트빌)202동 1호  </li>
+					<li>[제기2호점] 동대문구 제기로20 더푸른빌 101동 202호</li>
+					<li>[장안1동점] 동대문구 답십리로66길 3 1층</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용대상</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>[전 지점] 동대문구 관내 어린이집 영유아 25인이하</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용가능시간</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>[답십리점]          금요일 10:00~11:30</li>
+					<li>[제기점]        수~금요일 10:00~11:30</li>
+					<li>[배봉산점]          목요일 10:00~11:30</li>
+					<li>[장안2동점]         수요일 10:00~11:30</li>
+					<li>[제기2호점]         화요일 10:00~11:30</li>
+					<li>[장안1동점]         금요일 10:00~11:30</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>이용방법</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>온라인 예약(현재일로부터 15일 동안의 예약 가능)</li>
+				</ul>
+
+				<div class="__caution __mt30">
+					<h3>이용 시 주의사항 </h3>
+					<ul class="__dotlist __txt15 __mt15">
+						<li>이용 취소 시에는 반드시 홈페이지에서 취소를 합니다. </li>
+						<li>놀이공간에서 음식물 섭취 불가합니다.</li>
+						<li>간식실 이용 시 식사가 아닌 간편한 간식만 가능하며 사용 후 정리정돈을 합니다. </li>
+						<li>공동육아방에서 발생하는 안전사고의 모든 책임은 인솔자에게 있습니다.</li>
+						<li>이용 시 발생하는 기물파손 및 손실에 대해서는 이용자가 책임집니다.</li>
+						<li>냉온수기, 냉난방기기는 관계자 외 조작을 금합니다. </li>
+					</ul>
+				</div>
+
+				<div class="__tit1 __mt50">
+					<h3>문의사항 </h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>☎  02) 2237-5800 답십리점 담당자 </li>
+					<li>☎  02)  923-2272 제기점 담당자 </li>
+					<li>☎  02) 2212-1975 배봉산점 담당자 </li>
+					<li>☎  02) 2212-5844 장안2동점 담당자</li>
+					<li>☎  추후안내       제기2호점 담당자</li>
+					<li>☎  추후안내       장안1동점 담당자   </li>
+				</ul>
+
+
+				<div class="__apprAgree __mt80">
+					<input type="checkbox" />
+					<label>위의 동대문구육아종합지원센터의 대관 안내사항에 따라 관련 규정을 준수하고 내용에 동의합니다. </label>
+				</div>
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="./association_schedule.html" class="__btn3 __m-w100p">답십리점 공동육아방 이용신청</a>
+						<a href="./association_schedule.html" class="__btn3 __m-w100p __mmt5">제기점 공동육아방 이용신청</a>
+						<a href="./association_schedule.html" class="__btn3 __m-w100p __mmt5">배봉산점 공동육아방 이용신청</a>
+						<a href="./association_schedule.html" class="__btn3 __m-w100p __mmt5">장안2동점 공동육아방 이용신청</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

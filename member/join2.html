@@ -1,0 +1,525 @@
+<?
+$_dep = array(6,2);
+$_tit = array('회원관련','회원가입');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+				<div class="__joinProcess">
+					<div class="step step1"><span>01.약관동의</span></div>
+					<div class="step step2 active"><span>02.회원정보 입력</span></div>
+					<div class="step step3"><span>03.가입완료</span></div>
+				</div>
+
+
+				<div class="__tit1">
+					<h3>회원분류 <span class="dib2 __green">※ 회원님의 분류항목을 선택해주세요.</span></h3>
+				</div>
+				<div class="__memSel">
+					<div class="tbl">
+						<div class="lef">
+							<label><input type="radio"> 개인회원</label>
+							<label><input type="radio"> 기관회원</label>
+							<label><input type="radio"> 학생회원</label>
+						</div>
+						<div class="rig">
+							<dl>
+								<dt>개인회원 :</dt>
+								<dd>
+									만 5세 이하의 영유아 자녀를 둔 동대문구 주민, 예비부모, 임신을 계획 중인 분, 보육관련 종사자(보육교사, 여양사, 조리사, 간호사, 사무원등)
+								</dd>
+							</dl>
+							<dl>
+								<dt>기관회원 :</dt>
+								<dd>동대문구에 소재한 보육시설의 시설장</dd>
+							</dl>
+							<dl>
+								<dt>학생회원 :</dt>
+								<dd>보육관련 학과에 재학중인 대학생</dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="__tit1 __mt50">
+					<h3>회원분류 <span class="dib2 __orange"><i class="axi axi-check"></i> 체크 항목은 필수입력 사항입니다. </span></h3>
+				</div>
+
+				<table class="__tblView respond">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:180px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 제목</th>
+							<td>
+								<input type="text" class="__inp __m-w50p" style="width:270px;"> &nbsp;
+								<a href="javascript:fadeIn('.__popBasic2.popInfo2');" class="__btn2 vat">중복확인</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 비밀번호</th>
+							<td>
+								<input type="password" class="__inp __m-w100p" style="width:270px;">
+								<span class="__dib ml">비밀번호는 8~20자리의 영문과 숫자와 특수문자의 혼합해주세요.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 비밀번호 확인</th>
+							<td>
+								<input type="password" class="__inp __m-w100p" style="width:270px;">
+								<span class="__dib ml">비밀번호를 한번 더 입력해 주세요.</span>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 성명</th>
+							<td>
+								홍길동
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 이메일</th>
+							<td>
+								<ul class="__form email __m-w100p" style="width:423px">
+									<li><input type="text" class="__inp"></li>
+									<li class="dash">@</li>
+									<li><input type="text" class="__inp"></li>
+									<li class="space"></li>
+									<li class="sel">
+										<select name="" id="" class="__inp">
+											<option value="">직접입력</option>
+										</select>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 핸드폰 번호</th>
+							<td>
+								<ul class="__form __m-w100p" style="width:423px;">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">선택</option>
+										</select>
+									</li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 전화번호</th>
+							<td>
+								<ul class="__form __m-w100p" style="width:423px;">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">선택</option>
+										</select>
+									</li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+								</ul>
+								<div class="__mt10">
+									<label><input type="radio"> 집</label>
+									<label><input type="radio"> 직장</label>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 주소</th>
+							<td>
+								<ul class="__form __m-w100p" style="width:290px;">
+									<li><input type="text" class="__inp"></li>
+									<li class="space"></li>
+									<li style="width:100px;"><button type="button" class="__btn2 __w100p">우편번호찾기</button></li>
+								</ul>
+								<p class="__mt10"><input type="text" class="__inp"></p>
+								<p class="__mt10"><input type="text" class="__inp"></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 이메일 수신여부</th>
+							<td>
+								<label><input type="radio"> 수신</label>
+								<label><input type="radio"> 수신하지 않음</label>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> SMS서비스 수신여부</th>
+							<td>
+								<label><input type="radio"> 수신</label>
+								<label><input type="radio"> 수신하지 않음</label>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<div class="__tit1 __mt50">
+					<h3>추가정보입력 <span class="dib2 __orange"><i class="axi axi-check"></i> 체크 항목은 필수입력 사항입니다. </span></h3>
+				</div>
+
+				<table class="__tblView respond">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:180px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 구분</th>
+							<td>
+								<select name="" id="" class="__inp" style="width:auto;">
+									<option value="">부모</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><i class="axi axi-check __orange"></i> 장난감/도서 대여 회원가입</th>
+							<td>
+								<label><input type="radio"> 가입</label>
+								<label><input type="radio"> 가입하지 않음</label>
+
+								<p class="__mt10 __orange">가입시 “가입방법 및 이용방법”을 반드시 확인하세요.</p>
+								<p class="__mt10">
+									<a href="javascript:fadeIn('.__popBasic.popInfo');" class="__btn2">가입방법 및 이용방법</a>
+								</p>
+							</td>
+						</tr>
+
+					</tbody>
+				</table>
+
+
+				<div class="__tit1 __mt50">
+					<h3>자녀정보입력 <span class="dib2 __green">※ 자녀 주민등록번호는 수정이 불가능하오니 정확히 입력해주시기 바랍니다.</span></h3>
+				</div>
+
+				<div class="__m __mb20"><button type="button" class="__btn2 _add">자녀추가</button></div>
+
+				<table class="__tbl fix respond3" style="border-top-color:#222;">
+					<caption>TABLE</caption>
+					<colgroup class="__p">
+						<col style="width:120px;">
+						<col style="width:20%;">
+						<col>
+						<col style="width:15%;">
+						<col style="width:25%;">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col"><button type="button" class="__btn2 _add">자녀추가</button></th>
+							<th scope="col">자녀이름</th>
+							<th scope="col">자녀 생년월일</th>
+							<th scope="col">자녀 성별</th>
+							<th scope="col">재원</th>
+						</tr>
+					</thead>
+					<tbody class="_addThis">
+						<tr>
+							<td data-th="삭제">
+								-
+							</td>
+							<td data-th="자녀이름">
+								<input type="text" class="__inp">
+							</td>
+							<td data-th="자녀 생년월일">
+								<ul class="__form" style="width:100%;">
+									<li style="width:35%;">
+										<select name="" id="" class="__inp">
+											<option value="">2020</option>
+										</select>
+									</li>
+									<li class="dash">-</li>
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">10</option>
+										</select>
+									</li>
+									<li class="dash">-</li>
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">10</option>
+										</select>
+									</li>
+								</ul>
+							</td>
+							<td data-th="자녀 성별">
+								<select name="" id="" class="__inp">
+									<option value="">남</option>
+								</select>
+							</td>
+							<td data-th="재원">
+								<select name="" id="" class="__inp">
+									<option value="">어린이집</option>
+								</select>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="#" class="__btn1 gray">취소</a> &nbsp;
+						<button type="submit" class="__btn1" onclick="location.href='./join3.html'">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+
+<div class="__popBasic popInfo">
+	<div class="inner">
+		<div class="title">
+			<h3>장난감 / 도서 대여 회원가입 안내</h3>
+			<button type="button" class="close _close" onclick="fadeOut($(this).closest('.__popBasic'));"><i class="axi axi-close"></i></button>
+		</div>
+		<div class="desc">
+			<div class="__tit1">
+				<h3>회원별 연회비 및 구비서류</h3>
+			</div>
+
+			<table class="__tbl type2">
+				<caption>TABLE</caption>
+				<colgroup>
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">회원구분</th>
+						<th scope="col">회원별 가입안내</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>기관회원</td>
+						<td class="tal">
+							<dl class="__popDl">
+								<dt>[회원자격]</dt>
+								<dd>동대문구 소재 어린이집</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[연회비]</dt>
+								<dd>20,000원(대관료 포함)</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[구비서류]</dt>
+								<dd>회원가입 신청서, 고유 번호증 또는 어린이집 인가증</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>개인회원</td>
+						<td class="tal">
+							<dl class="__popDl">
+								<dt>[회원자격]</dt>
+								<dd>
+									만 5세 이하의 영유아 자녀를 둔 동대문구 주민, 예비부모 동대문구 소재 어린이집 보육교직원
+								</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[연회비]</dt>
+								<dd>10,000원</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[구비서류]</dt>
+								<dd>회원가입 신청서, 신분증, 주민등록등본1부</dd>
+							</dl>
+						</td>
+					</tr>
+					<tr>
+						<td>학생회원</td>
+						<td class="tal">
+							<dl class="__popDl">
+								<dt>[회원자격]</dt>
+								<dd>보육관련학과 대학생</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[연회비]</dt>
+								<dd>10,000원</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[구비서류]</dt>
+								<dd>회원가입 신청서, 학생증</dd>
+							</dl>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+
+			<div class="__tit1 __mt50">
+				<h3>회원 가입방법 및 이용방법</h3>
+			</div>
+
+			<table class="__tbl type2">
+				<caption>TABLE</caption>
+				<colgroup>
+					<col style="width:100px;">
+					<col>
+				</colgroup>
+				<thead>
+					<tr>
+						<th scope="col">회원구분</th>
+						<th scope="col">회원별 가입안내</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>가입방법</td>
+						<td>
+							홈페이지에서 회원가입(제출서류) → 동대문구육아종합지원센터에서 가입신청서 작성 및 연회비 납부 → 회원카드 발급 → 장난감 및 도서 대여 가능
+						</td>
+					</tr>
+					<tr>
+						<td>이용방법</td>
+						<td class="tal">
+							<dl class="__popDl">
+								<dt>[개인회원]</dt>
+								<dd>
+									1회 장난감 2점, 도서 3권 대여, 7일 대여(7일 연장 가능)
+									장난감을 대여하지 않을경우 도서 5권 대여 
+								</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[기관회원]</dt>
+								<dd>
+									1회 장난감 5점, 도서 5권 대여, 7일 대여(7일 연장 가능)
+									장난감을 대여하지 않을경우 도서 10권 대여 
+								</dd>
+							</dl>
+							<dl class="__popDl">
+								<dt>[학생회원]</dt>
+								<dd>
+									1회 장난감 2점, 도서 3권 대여, 7일 대여(7일 연장 가능) 
+									장난감을 대여하지 않을경우 도서 5권 대여 
+								</dd>
+							</dl>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<ul class="__dotlist dang __txt14 __orange __mt15">
+				<li>기초생활수급권자 및 차상위계층, 장애인 가족 무료(관계서류 구비)</li>
+				<li>다둥이 행복카드 발급가정, 한부모 가족 지원법에 의한 보호대상자 전액 무료</li>
+				<li>
+					회원 가입시 모든 구비서류를 제출해야만 회원가입이 가능합니다.<br>
+					(주민등록등본1부, 장애인 가종은 복지카드, 다둥이행복카드발급가정은 다둥이 행복카드,	기초생활수급권자 및 차상위계층은 수그바증명서를 꼭 지참해야 회원가입 가능)
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<div class="bg _close" onclick="fadeOut($(this).closest('.__popBasic'));"></div>
+</div>
+
+
+<div class="__popBasic2 popInfo2">
+	<div class="inner">
+		<div class="title">
+			<h3>아이디 중복확인</h3>
+			<button type="button" class="close _close" onclick="fadeOut($(this).closest('.__popBasic2'));"><i class="axi axi-close"></i></button>
+		</div>
+		
+				<div class="desc">
+					<div>
+					<div>&nbsp; &nbsp; &nbsp;
+						<p class="shape_arrow">&nbsp;입력하신 아이디 사용 가능여부를 알려드립니다.</p>
+							<p class="pop_box mgtop10">아이디 <span class="bold __orange">&quot;dolbie&quot;</span>는 사용하실 수 있습니다.</p>
+						<div class="mgtop10 fsize12 __mt10">
+							이 아이디를 사용하려면 아이디 사용버튼을 클릭하세요.
+							<button type="button" class="__btn2" onclick="idok('dolbie');">확인</button>
+						</div>
+					</div>
+					<div> &nbsp; &nbsp; &nbsp;<p class="shape_arrow">&nbsp;다른아이디를 사용하시려면 아래 입력창에 아이디를 <br/>&nbsp;입력하신 후중복확인 버튼을 눌러주세요
+					</div>
+				
+					<div class="__mt10">
+						<p class="pop_box mgtop10">아이디 입력&nbsp;
+						<input type="text" name="userid" class="__inp1" maxlength="16" onkeydown="onlyId()">
+						<button type="submit" class="__btn2">중복확인</button></p>
+					</div>
+	
+					</div>
+				</div>
+			
+		
+	</div>
+	<div class="bg _close" onclick="fadeOut($(this).closest('.__popBasic2'));"></div>
+</div>
+
+
+
+
+<script>
+function addDel(a){
+	$(a).closest('tr').remove();
+}
+
+$('._add').on('click',function(){
+	var html = '<tr>';
+	html+='<td data-th="삭제">';
+	html+='<button type="button" class="__del" onclick="addDel(this);"><i class="axi axi-close"></i></button>';
+	html+='</td>';
+	html+='<td data-th="자녀이름">';
+	html+='<input type="text" class="__inp">';
+	html+='</td>';
+	html+='<td data-th="자녀 생년월일">';
+	html+='<ul class="__form" style="width:100%;">';
+	html+='<li style="width:35%;">';
+	html+='<select name="" id="" class="__inp">';
+	html+='<option value="">2020</option>';
+	html+='</select>';
+	html+='</li>';
+	html+='<li class="dash">-</li>';
+	html+='<li>';
+	html+='<select name="" id="" class="__inp">';
+	html+='<option value="">10</option>';
+	html+='</select>';
+	html+='</li>';
+	html+='<li class="dash">-</li>';
+	html+='<li>';
+	html+='<select name="" id="" class="__inp">';
+	html+='<option value="">10</option>';
+	html+='</select>';
+	html+='</li>';
+	html+='</ul>';
+	html+='</td>';
+	html+='<td data-th="자녀 성별">';
+	html+='<select name="" id="" class="__inp">';
+	html+='<option value="">남</option>';
+	html+='</select>';
+	html+='</td>';
+	html+='<td data-th="재원">';
+	html+='<select name="" id="" class="__inp">';
+	html+='<option value="">어린이집</option>';
+	html+='</select>';
+	html+='</tr>';
+
+	$('._addThis').append(html);
+});
+</script>
+</body>
+</html>

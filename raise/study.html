@@ -1,0 +1,57 @@
+<?
+$_dep = array(3,5);
+$_tit = array('양육지원','전국공통부모교육');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2>
+					<!-- <img src="../images/icon/study.gif"> -->
+					<img src="../images/icon/sub_ico_renew4.png">
+					<?=end($_tit)?>
+				
+				</h2>
+			</div>
+			<div id="content">
+
+				<div class="__tit1">
+					<h3>목적 </h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>2016년부터 영유아 가정의 부모가 자녀 양육에 대한 다양한 정보를 제공받아 부모로서의 자기 역할을 정립할 수 있도록 전국 육아종합지원센터에서 전국공통부모교육을 지원하고 있음 </li>
+					<li>전국적으로 일관적이고 지속적인 부모교육을 진행함으로서 영유아 자녀 및 가정의 안정된 복지를 향상시키는데 긍정적인 역할을 하고 다양한 형태의 가족을 지원하여 부모교육을 체계화하고자 함</li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>지원대상</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>동대문구 관내 영유아 자녀를 둔 가정 (영유아, 부모 및 양육자) </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>신청방법</h3>
+				</div>
+				<ul class="__dotlist __txt15">
+					<li>동대문구육아종합지원센터 홈페이지 직접 신청 </li>
+				</ul>
+
+				<div class="__tit1 __mt50">
+					<h3>교육소개</h3>
+				</div>
+				<div class="tac"><img src="<?=DIR?>/images/study_2404.jpg" alt=""></div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

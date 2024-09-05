@@ -1,0 +1,180 @@
+<?
+// $pno = "060304";
+// $view_url = "program_view.php";
+?>
+
+<?
+$_dep = array(8,3,2);
+$_tit = array('마이페이지','온라인신청내역','컨설팅 프로그램');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php";
+?>
+
+<?include_once PATH.'/inc/board_config.php';?>
+
+<?
+// 	// 삭제
+// 	if($_POST[send]=="delete" && $_POST[idx]){
+// 		mysql_query("DELETE FROM ddm_aid_app WHERE idx='".$_POST[idx]."'");
+// 		echo "<script language='javascript'>
+// 					 location.href('/html/sub/index.php?pno=".$pno."&page=".$page."&state=".$state."');
+// 				  </script>";
+// 	}
+
+// 	if($state) $whereAnd .= " && state='$state'";
+
+// 	$listQuery		= "SELECT idx       
+// 							  , wdate     
+// 							  , kind      
+// 							  , AES_DECRYPT(UNHEX(tel),'DM') tel           
+// 							  , valuation 
+// 							  , vNumber   
+// 							  , period       
+// 							  , state     
+// 							  , regdate
+// 						FROM ddm_aid_app 
+// 						WHERE mbid='".$_SESSION['member_id']."' && status1!='2' $whereAnd ORDER BY idx DESC";
+
+// if($_SERVER['REMOTE_ADDR']=='112.218.172.44') {
+//     echo $listQuery;
+// }
+
+// 	$listResult		= mysql_query($listQuery);
+// 	$list_num		= @mysql_num_rows($listResult);	
+
+// 	if(!$total_count){ $total_count = 10; }
+
+// 	if ($page == ""){ $page = "1"; }				
+// 	$url				= $PHP_SELF."?pno=$pno&state=$state";
+// 	$total_page	= ceil($list_num/$total_count);
+// 	$set_page 	= $total_count * ($page-1);
+// 	$list_page 	= 10;
+// 	$last 			= $page * $total_count;
+
+// 	$paging		= common_paging2($url,$list_num,$page,$list_page,$total_count);
+// 	if ($last > $list_num){ $last = $list_num; }
+
+
+// // for paging
+// $TOTAL = $list_num;
+// $req['pagenumber'] = $page;
+// $page_limit   = 10;
+// $page_block  = 5;
+?>
+</head>
+<body>
+
+<form name="frm" method="post" action="/html/sub/index.php">
+    <input type="hidden" name="pno" value="<?=$pno?>">
+    <input type="hidden" name="idx">
+    <input type="hidden" name="send" value="delete">
+    <input type="hidden" name="page" value="<?=$page?>">
+    <input type="hidden" name="state" value="<?=$state?>">
+</form>
+
+<form name="viewForm" method="GET" action="<?=$_SERVER['PHP_SELF']?>" style="display:none">
+    <input type="hidden" name="pno" value="<?=$pno?>">
+    <input type="hidden" name="mode" value="view">
+    <input type="hidden" name="orderno">
+    <input type="hidden" name="page" value="<?=$page?>">
+</form>
+
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section member-page program-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <div class="__tab3">
+                        <a href="<?=DIR?>/mypage/modify.php"><span>회원정보 수정</span></a>
+                        <a href="<?=DIR?>/mypage/toy.php"><span>대여리스트</span></a>
+                        <a href="<?=DIR?>/mypage/study.php" class="active"><span>온라인신청내역</span></a>
+                        <a href="<?=DIR?>/mypage/leave.php"><span>회원탈퇴</span></a>
+                    </div>
+
+                    <div class="__tab">
+                        <a href="<?=DIR?>/mypage/study.php"><span>교육 및 행사</span></a>
+                        <a href="<?=DIR?>/mypage/program.php" class="active"><span>컨설팅 프로그램</span></a>
+                        <a href="<?=DIR?>/mypage/borrow.php"><span>대관신청</span></a>
+                        <!-- <a href="<?=DIR?>/mypage/table.php"><span>상차림신청</span></a> -->
+                        <a href="<?=DIR?>/mypage/association.php"><span>사전확인증</span></a>
+                    </div>
+                    
+                    <table class="__tblList respond3 __mb50">
+                        <caption>TABLE</caption>
+                        <colgroup>
+                            <col style="width:85px;">
+                            <col>
+                            <col style="width:150px;">
+                            <col style="width:200px;">
+                            <col style="width:150px;">
+                            <col style="width:120px;">
+                            <col style="width:120px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">신청일시</th>
+                                <th scope="col">평가인증여부</th>
+                                <th scope="col">연락처</th>
+                                <th scope="col">등록일</th>
+                                <th scope="col">예약상태</th>
+                                <th scope="col">취소</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?	
+                            $no = $list_num - $set_page;
+                            if ($list_num){
+                              for ($i = $set_page; $i < $last; $i++){
+                                @mysql_data_seek($listResult,$i);						
+                                $row= mysql_fetch_array($listResult);
+                                $stateIMG = $row['state']=="완료"?"icon_app_end":"icon_app_standby";
+                            ?>
+                            <tr>
+                                <td data-th="번호" class="__p"><?=$no?></td>
+                                <td data-th="신청일시"><!--fix. A href="/html/sub/?pno=<?=$pno?>&mode=view&idx=<?=$row[idx]?>&page=<?=$page?>"--><?=str_replace("-",".",$row[wdate])?> <?=$row[kind]=="AM"?"1":"2";?><!--/a--></td>
+                                <td data-th="평가인증여부">
+                                    <?
+                                      echo $row[valuation];
+                                      if($row[valuation]=="신청") echo $row[vNumber]."기 (".$row[period].")";
+                                      if($row[valuation] == '') { echo '&nbsp';}
+                                    ?>
+                                </td>
+							                  <td data-th="연락처"><?=$row[tel]?></td>
+							                  <td data-th="등록일"><?=date("Y.m.d",$row[regdate])?></td>
+							                  <td data-th="예약상태"><img src="../../images/common/<?=$stateIMG?>.gif"></td>
+							                  <td data-th="취소"><?if($row['state']=="신청"){?><a href="javascript:del(<?=$row[idx]?>);"><img src="../../images/common/icon_cancel.gif"></a><?}else{echo"&nbsp;";}?></td>
+                            </tr>
+                            <?						
+                              $no = $no-1; 
+                              }												
+                            }
+                            ?>
+                          </tbody>
+                      </table>
+
+                      <div class="__botArea">
+                          <div class="cen"><? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/pagenation.php"; ?></div>
+                      </div>
+                  </div>
+              </div>
+          </article>
+
+          <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+</body>
+<script language="JavaScript">
+    function del(v1) {
+        if (confirm('정말 취소하시겠습니까?')) {
+            f = document.frm;
+            f.idx.value = v1;
+            f.submit();
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,216 @@
+<?
+$_dep = array(5,1,1);
+$_tit = array('교육 및 놀이실 예약','보육교직원','교육 및 행사');
+include $_SERVER['DOCUMENT_ROOT']."/dobong/include/common.php"; 
+?>
+
+</head>
+<body>
+<div id="wrap" class="wrap">
+    <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/header.php"; ?>
+
+    <section class="section raise-page sub01-page">
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/svis.php"; ?>
+
+        <article class="cont cont1">
+            <div class="inner">
+                <div id="content">
+                    <div class="__boardView type2">
+                        <div class="top">
+                            <h3>[배봉산점] 꿈자람 공동육아방 - 1회차(10:00~11:30)</h3>
+                            <p class="date">등록일 2020-01-14</p>
+                        </div>
+
+                        <div class="__rendInfo">
+                            <dl>
+                                <dt>구분</dt>
+                                <dd>꿈자람공동육아방</dd>
+                            </dl>
+                            <dl>
+                                <dt>행사기간</dt>
+                                <dd>2020-10-08 ~ 2020-10-08</dd>
+                            </dl>
+                            <dl>
+                                <dt>접수기간</dt>
+                                <dd>8월 20일 17시(목) ~ 8월 21일 17시(금)</dd>
+                            </dl>
+                            <dl>
+                                <dt>시간</dt>
+                                <dd>1차 10:30~11:10 / 2차 11:20~12:00</dd>
+                            </dl>
+                            <dl>
+                                <dt>장소</dt>
+                                <dd>배봉산점</dd>
+                            </dl>
+                            <dl>
+                                <dt>주최</dt>
+                                <dd>동대문구육아종합지원센터</dd>
+                            </dl>
+                            <dl>
+                                <dt>문의처</dt>
+                                <dd>02-2247-5845</dd>
+                            </dl>
+                            <dl>
+                                <dt>신청현황</dt>
+                                <dd>가능인원 0명 / 신청인원 1명</dd>
+                            </dl>
+                            <dl>
+                                <dt>대기신청현황</dt>
+                                <dd>가능인원 0명 / 신청인원 1명</dd>
+                            </dl>
+                            <dl>
+                                <dt>교육비</dt>
+                                <dd>원</dd>
+                            </dl>
+                            <dl class="wide">
+                                <dt>납부방법</dt>
+                                <dd>방법</dd>
+                            </dl>
+                            <dl class="wide">
+                                <dt>첨부파일</dt>
+                                <dd><a href="#">8_유아_안전교육_신청서(9~10월).hwp</a></dd>
+                            </dl>
+                        </div>
+                        
+                        <div class="con">
+                            내용
+                            
+                            <div class="__mt50 tac">
+                                <a href="javascript:fadeIn('.__popBasic.popOnline');" class="__btn1">온라인 신청하기</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="__botArea">
+                        <div class="cen">
+                            <a href="<?=DIR?>/study/care.html" class="__btnList"><span>목록</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/f_popup.php"; ?>
+    </section>
+</div>
+<? include $_SERVER['DOCUMENT_ROOT']."/dobong/include/footer.php"; ?>
+
+<div class="__popBasic popOnline">
+    <div class="inner">
+        <div class="title">
+            <h3>교육 및 행사 온라인 신청하기</h3>
+            <button type="button" class="close _close" onclick="fadeOut($(this).closest('.__popBasic'));"><i class="axi axi-close"></i></button>
+        </div>
+
+        <div class="desc">
+            <div class="__provisionHead type2">
+                <h3>유의사항</h3>
+                <div class="__txt15 __mt10">
+                    교육 및 행사 신청은 본인 신청만 가능합니다.<br>
+                    교육 및 행사 내용 및 일정 변경시 아래 연락처와 이메일 주소로 변경 내용이 발송됩니다.<br>
+                    현재 연락처, 이메일 주소가 가입시 회원정보와 동일한지 반드시 확인해주시기 바랍니다. 
+                </div>
+            </div>
+
+            <table class="__tblView respond __mt30">
+                <caption>TABLE</caption>
+                <colgroup>
+                    <col style="width:140px;">
+                    <col>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th scope="row">신청자명</th>
+                        <td>홍길동</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">연락처</th>
+                        <td>
+                            <ul class="__form __m-w100p" style="width:280px;">
+                                <li>
+                                    <select name="" id="" class="__inp">
+                                        <option value="">010</option>
+                                    </select>
+                                </li>
+                                <li class="dash">-</li>
+                                <li><input type="text" class="__inp"></li>
+                                <li class="dash">-</li>
+                                <li><input type="text" class="__inp"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">이메일</th>
+                        <td>
+                            <ul class="__form email" style="width:100%">
+                                <li><input type="text" class="__inp"></li>
+                                <li class="dash">@</li>
+                                <li><input type="text" class="__inp"></li>
+                                <li class="space"></li>
+                                <li class="sel">
+                                    <select name="" id="" class="__inp">
+                                        <option value="">직접입력</option>
+                                    </select>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">추가아동</th>
+                        <td>
+                            <div>
+                                <select name="" id="" class="__inp" style="width:60px;">
+                                    <option value="">0</option>
+                                </select> 명
+                            </div>
+                            <div class="__mt10">(보호자를 제외한 영유아, 동반자 모두 포함, 명단에 포함된 인원만 입장 가능)</div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <dl class="__resBefore __mt20">
+                <dt>[개인정보+초상권]</dt>
+                <dd>
+                    본인은 “개인정보 보호법” 제15조(개인정보의 수집·이용) 및 제38조(권리행사의 방법 및 절차)에 따라
+                    개인정보 (성명,어린이집명,직위,연락처,초상권 등)의 수집 및 활용에 동의합니다.<br>
+                    ※ 수집된 개인정보는 교육운영 외 대른 목적으로 사용되지 않으며, 동의하지 않을 시 교육 참여가 제한됩니다.
+                </dd>
+            </dl>
+
+            <dl class="__resBefore __mt20">
+                <dt>[교육취소 및 관련 규정]</dt>
+                <dd>
+                    회원은 본 교육에 대해 무단 결석을 할 경우, 적용되는 제한사항에 동의합니다.<br>
+                    <span class="__orange">· 교육일로 부터 30일 동안 교육 시청 불가</span><br>
+                    · 단, 아래와 같은 사항은 예외로 적용됨<br>
+                    ① 교육 당일 취소시, 전화 연락하여 감기 또는 전염성 질환으로 참석이 어려운 경우<br>
+                    ② 교육 당일, 사고 및 불가피한 사정이 발생한 경우 ( 교육일로 부터 7일 이내에 증빙서류를 센터에 제출해야 함.)<br>
+                    ※ 교육 참석을 원하는 회원을 위해 신중한 신청 부탁 드리며, 동의하지 않을 시 교육 참여가 제한됩니다.
+                </dd>
+            </dl>
+
+            <div class="__caution type2 __mt20">
+                <h3>[유의사항]  당일 취소는 불가능합니다.</h3>
+            </div>
+
+            <dl class="__resAgree __mt20">
+                <dt>위 내용에 동의하십니까?</dt>
+                <dd>
+                    <label><input type="radio"> 동의합니다.</label>
+                    <label><input type="radio"> 동의하지 않습니다.</label>
+                </dd>
+            </dl>
+
+            <div class="__botArea">
+                <div class="cen">
+                    <button type="button" class="__btn1 gray" onclick="fadeOut($(this).closest('.__popBasic'));">취소</button> &nbsp;
+                    <button type="submit" class="__btn1">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg _close" onclick="fadeOut($(this).closest('.__popBasic'));"></div>
+</div>
+</body>
+</html>

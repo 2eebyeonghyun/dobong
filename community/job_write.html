@@ -1,0 +1,172 @@
+<?
+$_dep = array(5,6);
+$_tit = array('커뮤니티','구인');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+
+
+				<div class="__provisionHead __mb30">
+					<h3>어린이집에서 <strong>채용공고</strong>를 등재할 경우, </h3>
+					<div class="__txt15 __mt10">
+						기관 전화번호 외의 핸드폰번호는 <span class="__orange">개인정보보호법</span>에 따라 기록할수 없습니다.<br>
+						동대문구육아종합지원센터 기준에 적합한 경우만 구인 등록이 가능하오니 안내사항을 반드시 확인하시기 바랍니다.
+					</div>
+				</div>
+
+
+
+				<table class="__tblView respond __mt15">
+					<caption>TABLE</caption>
+					<colgroup>
+						<col style="width:140px;">
+						<col>
+						<col style="width:140px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">제목</th>
+							<td colspan="3"><input type="text" class="__inp"></td>
+						</tr>
+						<tr>
+							<th scope="row">구인기간</th>
+							<td colspan="3">
+								<ul class="__form __m-w100p" style="width:423px;">
+									<li><input type="text" class="__inp _date _from"></li>
+									<li class="dash">~</li>
+									<li><input type="text" class="__inp _date _to"></li>
+								</ul>
+								<script>
+								var dateFormat = 'mm/dd/yy',
+									from = $('._from').datepicker({
+											defaultDate: '+1w',
+											changeMonth: true
+										}).on('change',function(){
+											to.datepicker('option','minDate',getDate(this));
+										}),
+									to = $('._to').datepicker({
+										defaultDate: '+1w',
+										changeMonth: true
+									}).on('change',function(){
+										from.datepicker('option','maxDate',getDate(this));
+									});
+								</script>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">시설명</th>
+							<td>
+								<input type="text" class="__inp">
+							</td>
+							<th scope="row">시설유형</th>
+							<td>
+								<select name="" id="" class="__inp">
+									<option value="">선택하세요</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">시설장</th>
+							<td>
+								<input type="text" class="__inp">
+							</td>
+							<th scope="row">아동정원</th>
+							<td>
+								<input type="text" class="__inp" style="width:100px;"> 명
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">모집직종</th>
+							<td>
+								<select name="" id="" class="__inp">
+									<option value="">선택하세요</option>
+								</select>
+							</td>
+							<th scope="row">모집인원</th>
+							<td>
+								<input type="text" class="__inp" style="width:100px;"> 명
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">연락처</th>
+							<td colspan="3">
+								<ul class="__form __m-w100p" style="width:423px;">
+									<li>
+										<select name="" id="" class="__inp">
+											<option value="">010</option>
+										</select>
+									</li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+									<li class="dash">-</li>
+									<li><input type="text" class="__inp"></li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">이메일</th>
+							<td colspan="3">
+								<ul class="__form email __m-w100p" style="width:423px">
+									<li><input type="text" class="__inp"></li>
+									<li class="dash">@</li>
+									<li><input type="text" class="__inp"></li>
+									<li class="space"></li>
+									<li class="sel">
+										<select name="" id="" class="__inp">
+											<option value="">직접입력</option>
+										</select>
+									</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">주소</th>
+							<td colspan="3">
+								<ul class="__form __m-w100p" style="width:290px;">
+									<li><input type="text" class="__inp"></li>
+									<li class="space"></li>
+									<li style="width:100px;"><button type="button" class="__btn2 __w100p">우편번호찾기</button></li>
+								</ul>
+								<p class="__mt10"><input type="text" class="__inp"></p>
+								<p class="__mt10"><input type="text" class="__inp"></p>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">모집요강</th>
+							<td colspan="3">
+								<textarea name="" id="" class="__inp __m-h100" style="height:400px;">에디터</textarea>
+							</td>
+						</tr>
+
+
+
+					</tbody>
+				</table>
+
+
+				<div class="__botArea">
+					<div class="cen">
+						<button type="button" class="__btn1 gray">취소</button> &nbsp;
+						<button type="submit" class="__btn1">확인</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>

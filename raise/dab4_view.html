@@ -1,0 +1,79 @@
+<?
+$_dep = array(3,1);
+$_tit = array('양육지원','도서대여사업');
+include_once '../inc/pub.config.php';
+include_once PATH.'/inc/common.php';
+?>
+</head>
+<body>
+<div id="wrap" class="sub sub<?=$_dep[0];?> sub<?=$_dep[0].$_dep[1];?>">
+	<?include_once PATH.'/inc/head.php';?>
+	<?include_once PATH.'/inc/snb.php';?>
+	<div id="sub">
+		<div class="inner">
+			<div id="tit_tab">
+				<h2><?=end($_tit)?></h2>
+			</div>
+			<div id="content">
+<div class="__tab3">
+					<a href="<?=DIR?>/raise/dab4.html" class="active"><span>답십리점</span></a>
+					<a href="<?=DIR?>/raise/jae4.html"><span>제기점</span></a>
+				</div>
+				<div class="__tit2">
+					<h3>부모와 아이들에게 <strong>유익한 책</strong>을 찾아주세요!</h3>
+				</div>
+
+				<div class="__rendInfo">
+					<dl class="wide">
+						<dt>도서명</dt>
+						<dd>(내 친구 헝겊책) 어슬렁 거북 : 바닷속 친구들</dd>
+					</dl>
+					<dl>
+						<dt>저자명</dt>
+						<dd>편집부 글, 편집부 그림</dd>
+					</dl>
+					<dl>
+						<dt>출판사</dt>
+						<dd>애플비</dd>
+					</dl>
+					<dl>
+						<dt>구입날짜</dt>
+						<dd>2009-12-01</dd>
+					</dl>
+					<dl>
+						<dt>구입가격</dt>
+						<dd>76,800원</dd>
+					</dl>
+					<dl>
+						<dt>등록번호</dt>
+						<dd>DM01BA000519</dd>
+					</dl>
+					<dl>
+						<dt>청구기호</dt>
+						<dd>영09-0063</dd>
+					</dl>
+					<dl>
+						<dt>연령</dt>
+						<dd>0~3세</dd>
+					</dl>
+					<dl>
+						<dt>대여상태</dt>
+						<dd>
+							<span class="__ico1 green">대여중</span>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="__botArea">
+					<div class="cen">
+						<a href="#" class="__btnList"><span>목록</span></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<?include_once PATH.'/inc/foot.php';?>
+</div>
+</body>
+</html>
